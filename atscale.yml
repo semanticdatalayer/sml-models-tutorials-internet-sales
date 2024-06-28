@@ -1,6 +1,6 @@
-unique_name: sml-models
+unique_name: sml-models-tutorials-internet-sales
 object_type: catalog
-label: AtScale Model Library
+label: Internet Sales
 as_version: 1.0
 aggressive_agg_promotion: false
 build_speculative_aggs: false
