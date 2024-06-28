@@ -537,6 +537,18 @@ metrics:
   - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
     folder: Time Relative
 
+perspectives:
+  - unique_name: Internet Sales - No PII
+    dimensions:
+      - hierarchies:
+          - levels:
+              - Customer Name
+            name: Customer Hierarchy
+        name: Customer Dimension
+        secondaryattributes:
+          - d_firstname
+          - d_lastname
+
 drillthroughs:
 
   - unique_name: Customer Details
