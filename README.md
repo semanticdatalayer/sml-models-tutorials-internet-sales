@@ -13,6 +13,7 @@ The Internet Sales dataset is adapted from the Microsoft AdventureWorks tutorial
 ## Supported Data Platforms
 1. Snowflake
 2. Databricks
+3. BigQuery
 
 ## Data Model Overview
 
