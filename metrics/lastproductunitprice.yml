@@ -2,11 +2,11 @@ unique_name: lastproductunitprice
 object_type: metric
 label: Last Product Unit Price
 calculation_method: maximum
+folder: Product Metrics
 format: "$#,##0.00"
 semi_additive:
   position: last
-  dimension: Product Dimension
-  hierarchy: Product Dimension
-  level: Product Name
+  relationships:
+    - factinternetsales_Product_Dimension
 dataset: factinternetsales
 column: unitprice
