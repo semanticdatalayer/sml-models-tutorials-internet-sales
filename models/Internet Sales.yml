@@ -228,7 +228,7 @@ metrics:
   - unique_name: Estimated Customer Count-Order Retail445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Est Customer Count-Order Retail445-30PrdMvAvgPrevYearGrowthPct
     folder: Time Relative
 
   - unique_name: Estimated Customer Count-Order Retail445-30PrdMvLowerBand
@@ -282,7 +282,7 @@ metrics:
   - unique_name: Last Product Unit Price-Order Retail445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Lst Prod Unit Price-Order Retail445-30PrdMvAvgPrevYearGrowthPct
     folder: Time Relative
 
   - unique_name: Last Product Unit Price-Order Retail445-30PrdMvLowerBand
