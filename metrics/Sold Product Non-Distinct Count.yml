@@ -1,8 +1,0 @@
-unique_name: Sold Product Non-Distinct Count
-object_type: metric
-label: Sold Product Non-Distinct Count
-description:Sold Product Non-Distinct Count
-calculation_method: count non-null
-format: general number
-dataset: factinternetsales
-column: productkey
