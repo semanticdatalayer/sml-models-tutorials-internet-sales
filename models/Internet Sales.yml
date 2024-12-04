@@ -135,7 +135,7 @@ metrics:
   - unique_name: Sales Amount Standard Deviation
     folder: Sales Metrics
 
-  - unique_name: Sold Product Non-Distinct Count
+  - unique_name: Sold Product Non Distinct Count
     folder: Sales Metrics
 
   - unique_name: Average Customer Count per Order

@@ -1,4 +1,4 @@
 unique_name: Average Sold Product per Order
 object_type: metric_calc
 label: Average Sold Product per Order
-expression: "([Measures].[Sold Product Non-Distinct Count] / [Measures].[Order Quantity])"
+expression: "([Measures].[Sold Product Non Distinct Count] / [Measures].[Order Quantity])"

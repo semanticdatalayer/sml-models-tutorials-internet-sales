@@ -4,8 +4,8 @@ label: SoldProductNDC-Order CustomPP445-PrevYearGrowth
 description: "Growth over Previous Period Sales with a custom lookback key.  Use with\
   \ [Order CustomPP445]"
 expression: "CASE WHEN ISEMPTY([Measures].[SoldProductNDC-Order CustomPP445-PrevYear])\
-  \ or ISEMPTY(([Order Date Dimension].[Order CustomPP445].CurrentMember, [Measures].[Sold Product Non-Distinct Count]))\
+  \ or ISEMPTY(([Order Date Dimension].[Order CustomPP445].CurrentMember, [Measures].[Sold Product Non Distinct Count]))\
   \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order CustomPP445].CurrentMember,\
-  \ [Measures].[Sold Product Non-Distinct Count]) - [Measures].[SoldProductNDC-Order CustomPP445-PrevYear]\n\
+  \ [Measures].[Sold Product Non Distinct Count]) - [Measures].[SoldProductNDC-Order CustomPP445-PrevYear]\n\
   END"
 format: general number
