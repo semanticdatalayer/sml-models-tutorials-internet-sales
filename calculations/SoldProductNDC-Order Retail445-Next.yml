@@ -2,7 +2,7 @@ unique_name: SoldProductNDC-Order Retail445-Next
 object_type: metric_calc
 label: SoldProductNDC-Order Retail445-Next
 description: Next Period's  Sales Amount on Order Retail445
-expression: "CASE WHEN ISEMPTY([Measures].[ Sold Product Non-Distinct Count]) \nTHEN NULL\nELSE\n([Order\
-  \ Date Dimension].[Order Retail445].CurrentMember.NextMember, [Measures].[ Sold Product Non-Distinct Count])\n\
+expression: "CASE WHEN ISEMPTY([Measures].[Sold Product Non-Distinct Count]) \nTHEN NULL\nELSE\n([Order\
+  \ Date Dimension].[Order Retail445].CurrentMember.NextMember, [Measures].[Sold Product Non-Distinct Count])\n\
   END\n"
 format: general number

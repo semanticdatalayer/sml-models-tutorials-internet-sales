@@ -2,7 +2,7 @@ unique_name: SoldProductNDC-Order Retail445-YTD
 object_type: metric_calc
 label: SoldProductNDC-Order Retail445-YTD
 description: Sales Amount Year-to-date Order Retail445
-expression: "CASE WHEN ISEMPTY([Measures].[ Sold Product Non-Distinct Count]) THEN NULL \nELSE \nSum(PeriodsToDate([Order\
+expression: "CASE WHEN ISEMPTY([Measures].[Sold Product Non-Distinct Count]) THEN NULL \nELSE \nSum(PeriodsToDate([Order\
   \ Date Dimension].[Order Retail445].[Order ReportIng_Year], [Order Date Dimension].[Order\
-  \ Retail445].CurrentMember), [Measures].[ Sold Product Non-Distinct Count]) \nEND "
+  \ Retail445].CurrentMember), [Measures].[Sold Product Non-Distinct Count]) \nEND "
 format: general number
