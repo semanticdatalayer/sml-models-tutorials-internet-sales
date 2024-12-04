@@ -1,7 +1,7 @@
-unique_name: calculatedtax1
+unique_name: Sales Amount
 object_type: metric
-label: Calculated Tax
+label: Sales Amount
 calculation_method: sum
 format: "$#,##0.00"
 dataset: factinternetsales
-column: calculated tax
+column: salesamount

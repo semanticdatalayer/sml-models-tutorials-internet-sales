@@ -2,8 +2,8 @@ unique_name: Sales Amount SStdev-Order Retail445-PrevYear
 object_type: metric_calc
 label: Sales Amount SStdev-Order Retail445-PrevYear
 description: Order Sales Amount Prev Year (Retail445)
-expression: "CASE WHEN ISEMPTY([Measures].[salesamountsstdev1]) THEN \nNULL \nELSE\
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount Standard Deviation]) THEN \nNULL \nELSE\
   \ (ParallelPeriod([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
-  \ 1, [Order Date Dimension].[Order Retail445].CurrentMember), [Measures].[salesamountsstdev1])\
+  \ 1, [Order Date Dimension].[Order Retail445].CurrentMember), [Measures].[Sales Amount Standard Deviation])\
   \ END"
 format: "$#,##0.00"

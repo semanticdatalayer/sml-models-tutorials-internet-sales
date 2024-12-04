@@ -3,5 +3,5 @@ object_type: metric_calc
 label: Sales Amount SStdev-Order Retail445-30PrdMvAvg
 description: '30 Period Moving Average of Sales Amount.  Meant to execute at Day Level  of '
 expression: "Avg([Order Date Dimension].[Order Retail445].CurrentMember.Lag(29):[Order\
-  \ Date Dimension].[Order Retail445].CurrentMember, [Measures].[salesamountsstdev1])"
+  \ Date Dimension].[Order Retail445].CurrentMember, [Measures].[Sales Amount Standard Deviation])"
 format: "$#,##0.00"

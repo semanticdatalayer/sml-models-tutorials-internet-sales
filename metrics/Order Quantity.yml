@@ -1,4 +1,4 @@
-unique_name: orderquantity1
+unique_name: Order Quantity
 object_type: metric
 label: Order Quantity
 calculation_method: sum

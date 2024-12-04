@@ -2,8 +2,8 @@ unique_name: Sales Amount SStdev-Order CustomPP445-PrevYear
 object_type: metric_calc
 label: Sales Amount SStdev-Order CustomPP445-PrevYear
 description: "Previous Period Sales with a custom lookback key.  Use with [Order CustomPP445]"
-expression: "CASE WHEN ISEMPTY([Measures].[salesamountsstdev1]) THEN \nNULL\nELSE\
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount Standard Deviation]) THEN \nNULL\nELSE\
   \ (ParallelPeriod([Order Date Dimension].[Order CustomPP445].[Order customyear],\
-  \ 1, [Order Date Dimension].[Order CustomPP445].CurrentMember), [Measures].[salesamountsstdev1])\
+  \ 1, [Order Date Dimension].[Order CustomPP445].CurrentMember), [Measures].[Sales Amount Standard Deviation])\
   \ END"
 format: "$#,##0.00"

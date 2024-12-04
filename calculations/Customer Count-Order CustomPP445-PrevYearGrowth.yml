@@ -4,8 +4,8 @@ label: Customer Count-Order CustomPP445-PrevYearGrowth
 description: "Growth over Previous Period Sales with a custom lookback key.  Use with\
   \ [Order CustomPP445]"
 expression: "CASE WHEN ISEMPTY([Measures].[Customer Count-Order CustomPP445-PrevYear])\
-  \ or ISEMPTY(([Order Date Dimension].[Order CustomPP445].CurrentMember, [Measures].[customercount1]))\
+  \ or ISEMPTY(([Order Date Dimension].[Order CustomPP445].CurrentMember, [Measures].[Customer Count]))\
   \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order CustomPP445].CurrentMember,\
-  \ [Measures].[customercount1]) - [Measures].[Customer Count-Order CustomPP445-PrevYear]\n\
+  \ [Measures].[Customer Count]) - [Measures].[Customer Count-Order CustomPP445-PrevYear]\n\
   END"
 format: general number

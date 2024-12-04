@@ -1,6 +1,6 @@
-unique_name: salesamountAvg1
+unique_name: Average Sales Amount
 object_type: metric
-label: Sales Amount Avg
+label: Average Sales Amount
 description: Average Sales Amount
 calculation_method: average
 format: "$#,##0.00"

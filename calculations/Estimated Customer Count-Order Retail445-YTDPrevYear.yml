@@ -4,5 +4,5 @@ label: Estimated Customer Count-Order Retail445-YTDPrevYear
 description: 'Previous Year''s Year-to-date Sum of Sales '
 expression: "Avg(\nPeriodsToDate([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
   \ ParallelPeriod([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
-  \ 1, [Order Date Dimension].[Order Retail445].CurrentMember)), \n[Measures].[customercountestimate1])\n"
+  \ 1, [Order Date Dimension].[Order Retail445].CurrentMember)), \n[Measures].[Estimated Customer Count])\n"
 format: general number

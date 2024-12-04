@@ -1,6 +1,6 @@
-unique_name: salesamountsstdev1
+unique_name: Sales Amount Standard Deviation
 object_type: metric
-label: Sales Amount SStdev
+label: Sales Amount Standard Deviation
 calculation_method: stddev_samp
 format: "$#,##0.00"
 dataset: factinternetsales

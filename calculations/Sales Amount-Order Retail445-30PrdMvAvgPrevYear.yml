@@ -6,5 +6,5 @@ description: "Prev Year's 30 Period Moving  Average of Sales. Use on the [Order 
 expression: "Avg(ParallelPeriod([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
   \ 1, [Order Date Dimension].[Order Retail445].CurrentMember).Lag(29): \nParallelPeriod([Order\
   \ Date Dimension].[Order Retail445].[Order ReportIng_Year], 1, [Order Date Dimension].[Order\
-  \ Retail445].CurrentMember), [Measures].[salesamount1]\n)"
+  \ Retail445].CurrentMember), [Measures].[Sales Amount]\n)"
 format: "$#,##0.00"

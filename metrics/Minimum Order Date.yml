@@ -1,6 +1,6 @@
-unique_name: MinOrderDate
+unique_name: Minimum Order Date
 object_type: metric
-label: MinOrderDate
+label: Minimum Order Date
 calculation_method: minimum
 dataset: factinternetsales
 column: orderdatekey

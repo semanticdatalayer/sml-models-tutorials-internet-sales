@@ -5,6 +5,6 @@ description: Order Retail445 Previous Period Growth Percent
 expression: |-
   CASE WHEN ISEMPTY([Measures].[Sales Amount-Order Retail445-Prev]) THEN NULL
   ELSE
-  (([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[salesamount1]) - [Measures].[Sales Amount-Order Retail445-Prev]) / [Measures].[Sales Amount-Order Retail445-Prev]
+  (([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[Sales Amount]) - [Measures].[Sales Amount-Order Retail445-Prev]) / [Measures].[Sales Amount-Order Retail445-Prev]
   END
 format: percent

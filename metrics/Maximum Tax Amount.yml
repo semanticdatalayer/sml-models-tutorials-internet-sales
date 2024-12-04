@@ -1,6 +1,6 @@
-unique_name: maxtaxamount1
+unique_name: Maximum Tax Amount
 object_type: metric
-label: Max Tax Amount
+label: Maximum Tax Amount
 calculation_method: maximum
 format: "$#,##0.00"
 dataset: factinternetsales

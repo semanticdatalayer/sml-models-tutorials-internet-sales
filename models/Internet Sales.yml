@@ -102,40 +102,40 @@ dimensions:
 
 metrics:
 
-  - unique_name: calculatedtax1
+  - unique_name: Calculated Tax
     folder: Sales Metrics
 
-  - unique_name: customercount1
+  - unique_name: Customer Count
     folder: Customer Metrics
 
-  - unique_name: customercountestimate1
+  - unique_name: Estimated Customer Count
     folder: Customer Metrics
 
-  - unique_name: lastproductunitprice
+  - unique_name: Last Product Unit Price
     folder: Product Metrics
 
-  - unique_name: maxOrderDate
+  - unique_name: Maximum Order Date
     folder: Time Relative
 
-  - unique_name: maxtaxamount1
+  - unique_name: Maximum Tax Amount
     folder: Sales Metrics
 
-  - unique_name: MinOrderDate
+  - unique_name: Minimum Order Date
     folder: Time Relative
 
-  - unique_name: orderquantity1
+  - unique_name: Order Quantity
     folder: Sales Metrics
 
-  - unique_name: salesamount1
+  - unique_name: Sales Amount
     folder: Sales Metrics
 
-  - unique_name: salesamountAvg1
+  - unique_name: Average Sales Amount
     folder: Sales Metrics
 
-  - unique_name: salesamountsstdev1
+  - unique_name: Sales Amount Standard Deviation
     folder: Sales Metrics
 
-  - unique_name: soldproductNDC1
+  - unique_name:  Sold Product Non-Distinct Count
     folder: Sales Metrics
 
   - unique_name: Average Customer Count per Order
@@ -567,8 +567,8 @@ drillthroughs:
         dimension: Geography Dimension
 
     metrics:
-      - orderquantity1
-      - salesamount1
+      - Order Quantity
+      - Sales Amount
 
   - unique_name: Shipping Details
     attributes:
@@ -589,5 +589,5 @@ drillthroughs:
         dimension: Product Dimension
 
     metrics:
-      - orderquantity1
-      - salesamount1
+      - Order Quantity
+      - Sales Amount

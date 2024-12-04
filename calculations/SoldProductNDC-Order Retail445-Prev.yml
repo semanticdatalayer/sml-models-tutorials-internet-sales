@@ -2,7 +2,7 @@ unique_name: SoldProductNDC-Order Retail445-Prev
 object_type: metric_calc
 label: 'SoldProductNDC-Order Retail445-Prev '
 description: Order Reporting Hierarchy Previous Period Sales
-expression: "CASE WHEN ISEMPTY([Measures].[soldproductNDC1]) \nTHEN NULL\nELSE\n([Order\
-  \ Date Dimension].[Order Retail445].CurrentMember.PrevMember, [Measures].[soldproductNDC1])\n\
+expression: "CASE WHEN ISEMPTY([Measures].[ Sold Product Non-Distinct Count]) \nTHEN NULL\nELSE\n([Order\
+  \ Date Dimension].[Order Retail445].CurrentMember.PrevMember, [Measures].[ Sold Product Non-Distinct Count])\n\
   END\n"
 format: general number

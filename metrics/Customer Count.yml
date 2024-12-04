@@ -1,4 +1,4 @@
-unique_name: customercount1
+unique_name: Customer Count
 object_type: metric
 label: Customer Count
 calculation_method: count distinct

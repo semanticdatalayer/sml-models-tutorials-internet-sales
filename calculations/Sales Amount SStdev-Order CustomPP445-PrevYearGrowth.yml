@@ -4,8 +4,8 @@ label: Sales Amount SStdev-Order CustomPP445-PrevYearGrowth
 description: "Growth over Previous Period Sales with a custom lookback key.  Use with\
   \ [Order CustomPP445]"
 expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount SStdev-Order CustomPP445-PrevYear])\
-  \ or ISEMPTY(([Order Date Dimension].[Order CustomPP445].CurrentMember, [Measures].[salesamountsstdev1]))\
+  \ or ISEMPTY(([Order Date Dimension].[Order CustomPP445].CurrentMember, [Measures].[Sales Amount Standard Deviation]))\
   \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order CustomPP445].CurrentMember,\
-  \ [Measures].[salesamountsstdev1]) - [Measures].[Sales Amount SStdev-Order CustomPP445-PrevYear]\n\
+  \ [Measures].[Sales Amount Standard Deviation]) - [Measures].[Sales Amount SStdev-Order CustomPP445-PrevYear]\n\
   END"
 format: "$#,##0.00"
