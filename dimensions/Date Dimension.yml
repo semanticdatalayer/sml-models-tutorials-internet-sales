@@ -162,8 +162,8 @@ hierarchies:
 
         secondary_attributes:
 
-          - unique_name: ReportIng Half Year
-            label: ReportIng Half
+          - unique_name: ReportIng Half Year Attribute
+            label: ReportIng Half Year Attribute
             folder: Date Attributes
             dataset: DateCustom
             name_column: ReportIng Half Year_name
