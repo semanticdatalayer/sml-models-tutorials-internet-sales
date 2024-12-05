@@ -128,9 +128,8 @@ hierarchies:
 
     levels:
 
-      - unique_name: Year
+      - unique_name: Year Week Hierarchy
         
-
       - unique_name: Week
         
 
@@ -156,8 +155,7 @@ hierarchies:
 
     levels:
 
-      - unique_name: ReportIng Year
-        
+      - unique_name: ReportIng Year      
 
       - unique_name: ReportIng Half Year
         
@@ -550,7 +548,7 @@ level_attributes:
       - year
     sort_column: year
 
-  - unique_name: Year
+  - unique_name: Year Week Hierarchy
     label: Year
     dataset: DateCustom
     name_column: year_name
