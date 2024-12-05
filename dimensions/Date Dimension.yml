@@ -155,24 +155,22 @@ hierarchies:
 
     levels:
 
-      - unique_name: ReportIng Year      
+      - unique_name: Reporting Year      
 
-      - unique_name: ReportIng Half Year
-        
+      - unique_name: Reporting Half Year        
 
         secondary_attributes:
 
-          - unique_name: ReportIng Half Year Attribute
-            label: ReportIng Half Year Attribute
+          - unique_name: Reporting Half Year Attribute
+            label: Reporting Half Year Attribute
             folder: Date Attributes
             dataset: DateCustom
-            name_column: ReportIng Half Year_name
+            name_column: reporting_half_year_name
             key_columns:
-              - ReportIng Half Year
-            sort_column: ReportIng Half Year_name
+              - reporting_half_year
+            sort_column: reporting_half_year_name
 
-      - unique_name: ReportIng Month
-        
+      - unique_name: Reporting Month        
 
         secondary_attributes:
 
@@ -186,7 +184,7 @@ hierarchies:
             sort_column: reporting_month_name2
 
           - unique_name: Reporting Month Of Quarter
-            label: ReportIng Month Of Quarter
+            label: Reporting Month Of Quarter
             folder: Date Attributes
             dataset: DateCustom
             name_column: reporting_month_of_quarter_name
@@ -195,7 +193,7 @@ hierarchies:
             sort_column: reporting_month_of_quarter_name
 
           - unique_name: Reporting Month Of Year
-            label: ReportIng Month Of Year
+            label: Reporting Month Of Year
             folder: Date Attributes
             dataset: DateCustom
             name_column: reporting_month_of_year_name
@@ -203,8 +201,7 @@ hierarchies:
               - reporting_month_of_year
             sort_column: reporting_month_of_year_name
 
-      - unique_name: ReportIng Week
-        
+      - unique_name: Reporting Week        
 
         secondary_attributes:
 
@@ -447,10 +444,10 @@ level_attributes:
       \ key."
     dataset: DateCustom
     time_unit: year
-    name_column: ReportIng Year_name
+    name_column: reporting_year_name
     key_columns:
-      - ReportIng Year
-    sort_column: ReportIng Year
+      - reporting_year
+    sort_column: reporting_year
 
   - unique_name: Day
     label: Day
@@ -492,16 +489,16 @@ level_attributes:
       - datekey
     sort_column: datekey
 
-  - unique_name: ReportIng Half Year
-    label: ReportIng Half Year
+  - unique_name: Reporting Half Year
+    label: Reporting Half Year
     dataset: DateCustom
-    name_column: ReportIng Half Year_name
+    name_column: reporting_half_year_name
     time_unit: halfyear
     key_columns:
-      - ReportIng Half Year
-    sort_column: ReportIng Half Year
+      - reporting_half_year
+    sort_column: reporting_half_year
 
-  - unique_name: ReportIng Month
+  - unique_name: Reporting Month
     label: ReportIng Month
     dataset: DateCustom
     name_column: reporting_month_name2
@@ -510,7 +507,7 @@ level_attributes:
       - reporting_month
     sort_column: reporting_month
 
-  - unique_name: ReportIng Week
+  - unique_name: Reporting Week
     label: ReportIng Week
     description: Week level of the 4-4-5 calendar
     dataset: DateCustom
@@ -520,14 +517,14 @@ level_attributes:
       - reporting_week
     sort_column: reporting_week
 
-  - unique_name: ReportIng Year
-    label: ReportIng Year
+  - unique_name: Reporting Year
+    label: Reporting Year
     dataset: DateCustom
-    name_column: ReportIng Year_name
+    name_column: reporting_year_name
     time_unit: year
     key_columns:
-      - ReportIng Year
-    sort_column: ReportIng Year
+      - reporting_year
+    sort_column: reporting_year
 
   - unique_name: Week
     label: Week
