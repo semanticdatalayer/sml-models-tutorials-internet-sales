@@ -81,8 +81,8 @@ hierarchies:
               - day_of_week
             sort_column: day_of_week
 
-          - unique_name: Day
-            label: Day
+          - unique_name: Day Attribute
+            label: Day Attribute
             folder: Date Attributes
             associated_hierarchy: Date Month Hierarchy
             dataset: DateCustom
