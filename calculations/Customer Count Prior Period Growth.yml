@@ -4,6 +4,5 @@ label: Customer Count Prior Period Growth
 description: Order Retail 445 Growth since previous period.
 expression: "CASE WHEN ISEMPTY([Measures].[Customer Count Prior Period]) OR\
   \ ISEMPTY([Measures].[Customer Count])\nTHEN NULL \nELSE \n([Order Date Dimension].[Order\
-  \ Retail 445].CurrentMember, [Measures].[Customer Count]) - [Measures].[Customer\
-  \ Count-Order Retail 445-Prev]\nEND"
+  \ Retail 445].CurrentMember, [Measures].[Customer Count]) - [Measures].[Customer Count Prior Period]\nEND"
 format: general number

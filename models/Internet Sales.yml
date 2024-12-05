@@ -159,9 +159,6 @@ metrics:
   - unique_name: Average Sold Product per Order
     folder: Time Relative
 
-  - unique_name: Prior Year Customer Growth
-    folder: Time Relative
-
   - unique_name: Customer Count 30 Period Moving Average
     folder: Time Relative
 
@@ -183,34 +180,7 @@ metrics:
   - unique_name: Customer Count Year to Date
     folder: Time Relative
 
-  - unique_name: Estimated Prior Year Customer Growth
-    folder: Time Relative
-
-  - unique_name: Estimated Customer Count 30 Period Moving Average
-    folder: Time Relative
-
-  - unique_name: Estimated Customer Count Next Period
-    folder: Time Relative
-
-  - unique_name: Estimated Customer Count Prior Period
-    folder: Time Relative
-
-  - unique_name: Estimated Customer Count Prior Period Growth
-    folder: Time Relative
-
-  - unique_name: Estimated Customer Count Prior Period Growth Percent
-    folder: Time Relative
-
-  - unique_name: Estimated Customer Count Prior Year
-    folder: Time Relative
-
-  - unique_name: Estimated Customer Count Year to Date
-    folder: Time Relative
-
   - unique_name: Sales Amount Prior Year
-    folder: Time Relative
-
-  - unique_name: Sales Amount-Order Custom PP445-PrevYearGrowth
     folder: Time Relative
 
   - unique_name: Sales Amount 30 Period Moving Average
@@ -226,9 +196,6 @@ metrics:
     folder: Time Relative
 
   - unique_name: Sales Amount Prior Period Growth Percent
-    folder: Time Relative
-
-  - unique_name: Sales Amount Prior Year
     folder: Time Relative
 
   - unique_name: Sales Amount Year to Date

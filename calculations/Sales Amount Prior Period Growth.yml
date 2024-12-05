@@ -4,6 +4,5 @@ label: Sales Amount Prior Period Growth
 description: Order Retail 445 Growth since previous period.
 expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount Prior Period]) OR\
   \ ISEMPTY([Measures].[Sales Amount])\nTHEN NULL \nELSE \n([Order Date Dimension].[Order\
-  \ Retail 445].CurrentMember, [Measures].[Sales Amount]) - [Measures].[Sales Amount-Order\
-  \ Retail 445-Prev]\nEND"
+  \ Retail 445].CurrentMember, [Measures].[Sales Amount]) - [Measures].[Sales Amount Prior Period]\nEND"
 format: "$#,##0.00"
