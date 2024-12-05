@@ -63,7 +63,7 @@ relationships:
         - currencykey
     to:
       dimension: Order Dimension
-      level: order_line_item
+      level: Order Line Item
 
   - unique_name: factinternetsales_Date_Dimension_Order_2
     from:
