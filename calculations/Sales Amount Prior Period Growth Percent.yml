@@ -1,0 +1,10 @@
+unique_name: Sales Amount Prior Period Growth Percent
+object_type: metric_calc
+label: Sales Amount Prior Period Growth Percent
+description: Order Retail 445 Previous Period Growth Percent
+expression: |-
+  CASE WHEN ISEMPTY([Measures].[Sales Amount Prior Period]) THEN NULL
+  ELSE
+  (([Order Date Dimension].[Order Retail 445].CurrentMember, [Measures].[Sales Amount]) - [Measures].[Sales Amount Prior Period]) / [Measures].[Sales Amount Prior Period]
+  END
+format: percent

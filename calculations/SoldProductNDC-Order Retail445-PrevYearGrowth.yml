@@ -1,9 +1,0 @@
-unique_name: SoldProductNDC-Order Retail 445-PrevYearGrowth
-object_type: metric_calc
-label: SoldProductNDC-Order Retail 445-PrevYearGrowth
-description: Parallel Period Sales Growth  Since the Previous Year
-expression: "CASE WHEN ISEMPTY([Measures].[SoldProductNDC-Order Retail 445-PrevYear])\
-  \ or ISEMPTY(([Order Date Dimension].[Order Retail 445].CurrentMember, [Measures].[Sold Product Non Distinct Count]))\
-  \ THEN\nNULL \nELSE \n([Order Date Dimension].[Order Retail 445].CurrentMember, [Measures].[Sold Product Non Distinct Count])\
-  \ - [Measures].[SoldProductNDC-Order Retail 445-PrevYear]\nEND\n"
-format: general number

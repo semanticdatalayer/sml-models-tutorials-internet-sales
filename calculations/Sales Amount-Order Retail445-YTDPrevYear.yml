@@ -1,9 +1,0 @@
-unique_name: Sales Amount-Order Retail 445-YTDPrevYear
-object_type: metric_calc
-label: Sales Amount-Order Retail 445-YTDPrevYear
-description: 'Previous Year''s Year-to-date Sum of Sales '
-expression: "Aggregate(\nPeriodsToDate([Order Date Dimension].[Order Retail 445].[Order\
-  \ ReportIng Year], ParallelPeriod([Order Date Dimension].[Order Retail 445].[Order\
-  \ ReportIng Year], 1, [Order Date Dimension].[Order Retail 445].CurrentMember)),\
-  \ \n[Measures].[Sales Amount])\n"
-format: "$#,##0.00"

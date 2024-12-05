@@ -1,8 +1,0 @@
-unique_name: Customer Count-Order Retail 445-PrevYear
-object_type: metric_calc
-label: Customer Count-Order Retail 445-PrevYear
-description: Order Sales Amount Prev Year (Retail 445)
-expression: "CASE WHEN ISEMPTY([Measures].[Customer Count]) THEN \nNULL \nELSE (ParallelPeriod([Order\
-  \ Date Dimension].[Order Retail 445].[Order ReportIng Year], 1, [Order Date Dimension].[Order\
-  \ Retail 445].CurrentMember), [Measures].[Customer Count]) END"
-format: general number
