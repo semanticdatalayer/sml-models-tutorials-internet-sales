@@ -19,7 +19,7 @@ hierarchies:
 
         secondary_attributes:
 
-          - unique_name: City
+          - unique_name: City Attribute
             label: City
             dataset: dim_geo_city
             name_column: city

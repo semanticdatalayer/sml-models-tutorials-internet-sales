@@ -17,10 +17,8 @@ hierarchies:
 
       - unique_name: Year
         
-
       - unique_name: Quarter
        
-
         secondary_attributes:
 
           - unique_name: Quarter Number
@@ -32,8 +30,7 @@ hierarchies:
               - quarter_of_year
             sort_column: quarter_of_year
 
-      - unique_name: Month
-        
+      - unique_name: Month        
 
         secondary_attributes:
 
