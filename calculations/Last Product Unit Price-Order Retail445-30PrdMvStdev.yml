@@ -1,7 +1,0 @@
-unique_name: Last Product Unit Price-Order Retail 445-30PrdMvStdev
-object_type: metric_calc
-label: Last Product Unit Price-Order Retail 445-30PrdMvStdev
-description: "30 Period Standard Deviation Use at Day Level of [Order Retail 445]"
-expression: "Stdev([Order Date Dimension].[Order Retail 445].CurrentMember.Lag(29):[Order\
-  \ Date Dimension].[Order Retail 445].CurrentMember, [Measures].[Last Product Unit Price])"
-format: "$#,##0.00"

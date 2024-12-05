@@ -1,0 +1,8 @@
+unique_name: Sales Amount Prior Year
+object_type: metric_calc
+label: Sales Amount Prior Year
+description: "Previous Period Sales with a custom lookback key.  Use with [Order Custom PP445]"
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount]) THEN \nNULL\nELSE (ParallelPeriod([Order\
+  \ Date Dimension].[Order Custom PP445].[Order Custom Year], 1, [Order Date Dimension].[Order\
+  \ Custom PP445].CurrentMember), [Measures].[Sales Amount]) END"
+format: "$#,##0.00"

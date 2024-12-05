@@ -1,8 +1,0 @@
-unique_name: Sales Amount-Order Retail 445-Next
-object_type: metric_calc
-label: Sales Amount-Order Retail 445-Next
-description: Next Period's  Sales Amount on Order Retail 445
-expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount]) \nTHEN NULL\nELSE\n([Order\
-  \ Date Dimension].[Order Retail 445].CurrentMember.NextMember, [Measures].[Sales Amount])\n\
-  END\n"
-format: "$#,##0.00"

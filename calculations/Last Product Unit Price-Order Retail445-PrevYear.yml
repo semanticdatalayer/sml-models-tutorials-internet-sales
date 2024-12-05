@@ -1,9 +1,0 @@
-unique_name: Last Product Unit Price-Order Retail 445-PrevYear
-object_type: metric_calc
-label: Last Product Unit Price-Order Retail 445-PrevYear
-description: Order Sales Amount Prev Year (Retail 445)
-expression: "CASE WHEN ISEMPTY([Measures].[Last Product Unit Price]) THEN \nNULL \nELSE\
-  \ (ParallelPeriod([Order Date Dimension].[Order Retail 445].[Order ReportIng Year],\
-  \ 1, [Order Date Dimension].[Order Retail 445].CurrentMember), [Measures].[Last Product Unit Price])\
-  \ END"
-format: "$#,##0.00"

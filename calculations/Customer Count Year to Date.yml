@@ -1,0 +1,8 @@
+unique_name: Customer Count Year to Date
+object_type: metric_calc
+label: Customer Count Year to Date
+description: Sales Amount Year-to-date Order Retail 445
+expression: "CASE WHEN ISEMPTY([Measures].[Customer Count]) THEN NULL \nELSE \nAvg(PeriodsToDate([Order\
+  \ Date Dimension].[Order Retail 445].[Order ReportIng Year], [Order Date Dimension].[Order\
+  \ Retail 445].CurrentMember), [Measures].[Customer Count]) \nEND "
+format: general number

@@ -1,8 +1,0 @@
-unique_name: Estimated Customer Count-Order Retail 445-Next
-object_type: metric_calc
-label: Estimated Customer Count-Order Retail 445-Next
-description: Next Period's  Sales Amount on Order Retail 445
-expression: "CASE WHEN ISEMPTY([Measures].[Estimated Customer Count]) \nTHEN NULL\n\
-  ELSE\n([Order Date Dimension].[Order Retail 445].CurrentMember.NextMember, [Measures].[Estimated Customer Count])\n\
-  END\n"
-format: general number

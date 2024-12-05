@@ -1,9 +1,0 @@
-unique_name: Last Product Unit Price-Order Retail 445-YTD
-object_type: metric_calc
-label: Last Product Unit Price-Order Retail 445-YTD
-description: Sales Amount Year-to-date Order Retail 445
-expression: "CASE WHEN ISEMPTY([Measures].[Last Product Unit Price]) THEN NULL \nELSE\
-  \ \nAvg(PeriodsToDate([Order Date Dimension].[Order Retail 445].[Order ReportIng Year],\
-  \ [Order Date Dimension].[Order Retail 445].CurrentMember), [Measures].[Last Product Unit Price])\
-  \ \nEND "
-format: "$#,##0.00"

@@ -1,0 +1,8 @@
+unique_name: Sales Amount Year to Date
+object_type: metric_calc
+label: Sales Amount Year to Date
+description: Sales Amount Year-to-date Order Retail 445
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount]) THEN NULL \nELSE \nAggregate(PeriodsToDate([Order\
+  \ Date Dimension].[Order Retail 445].[Order ReportIng Year], [Order Date Dimension].[Order\
+  \ Retail 445].CurrentMember), [Measures].[Sales Amount]) \nEND "
+format: "$#,##0.00"
