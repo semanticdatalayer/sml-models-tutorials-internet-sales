@@ -1,4 +1,4 @@
-unique_name: Internet Sales
+unique_name: internet_sales
 object_type: model
 label: Internet Sales
 visible: true
@@ -202,7 +202,7 @@ metrics:
     folder: Time Relative
 
 perspectives:
-  - unique_name: Internet Sales - No PII
+  - unique_name: internet_sales_no_pii
     dimensions:
       - hierarchies:
           - levels:
