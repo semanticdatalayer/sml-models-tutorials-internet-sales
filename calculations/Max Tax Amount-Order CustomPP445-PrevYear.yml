@@ -1,8 +1,8 @@
-unique_name: Max Tax Amount-Order CustomPP445-PrevYear
+unique_name: Max Tax Amount-Order Custom PP445-PrevYear
 object_type: metric_calc
-label: Max Tax Amount-Order CustomPP445-PrevYear
-description: "Previous Period Sales with a custom lookback key.  Use with [Order CustomPP445]"
+label: Max Tax Amount-Order Custom PP445-PrevYear
+description: "Previous Period Sales with a custom lookback key.  Use with [Order Custom PP445]"
 expression: "CASE WHEN ISEMPTY([Measures].[Maximum Tax Amount]) THEN \nNULL\nELSE (ParallelPeriod([Order\
-  \ Date Dimension].[Order CustomPP445].[Order customyear], 1, [Order Date Dimension].[Order\
-  \ CustomPP445].CurrentMember), [Measures].[Maximum Tax Amount]) END"
+  \ Date Dimension].[Order Custom PP445].[Order Custom Year], 1, [Order Date Dimension].[Order\
+  \ Custom PP445].CurrentMember), [Measures].[Maximum Tax Amount]) END"
 format: "$#,##0.00"

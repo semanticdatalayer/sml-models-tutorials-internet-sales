@@ -117,15 +117,15 @@ columns:
     data_type: "decimal(38,0)"
   - name: reporting_day_of_year_name
     data_type: string
-  - name: reporting_half_year
+  - name: ReportIng Half Year
     data_type: datetime
-  - name: reporting_half_year_lykey
+  - name: ReportIng Half Year_lykey
     data_type: datetime
-  - name: reporting_half_year_name
+  - name: ReportIng Half Year_name
     data_type: string
-  - name: reporting_half_year_of_year
+  - name: ReportIng Half Year
     data_type: "decimal(38,0)"
-  - name: reporting_half_year_of_year_name
+  - name: ReportIng Half Year_name
     data_type: string
   - name: reporting_month
     data_type: datetime
@@ -185,11 +185,11 @@ columns:
     data_type: "decimal(38,0)"
   - name: reporting_week_of_year_name
     data_type: string
-  - name: reporting_year
+  - name: ReportIng Year
     data_type: datetime
-  - name: reporting_year_lykey
+  - name: ReportIng Year_lykey
     data_type: datetime
-  - name: reporting_year_name
+  - name: ReportIng Year_name
     data_type: string
   - name: week
     data_type: datetime

@@ -1,7 +1,7 @@
-unique_name: Customer Count-Order Retail445-30PrdMvLowerBand
+unique_name: Customer Count-Order Retail 445-30PrdMvLowerBand
 object_type: metric_calc
-label: Customer Count-Order Retail445-30PrdMvLowerBand
-description: "Sales 30 Day Moving Average - 1 Stdev, use on [Order Retail445]"
-expression: "[Measures].[Customer Count-Order Retail445-30PrdMvAvg] - [Measures].[Customer\
-  \ Count-Order Retail445-30PrdMvStdev]"
+label: Customer Count-Order Retail 445-30PrdMvLowerBand
+description: "Sales 30 Day Moving Average - 1 Stdev, use on [Order Retail 445]"
+expression: "[Measures].[Customer Count-Order Retail 445-30PrdMvAvg] - [Measures].[Customer\
+  \ Count-Order Retail 445-30PrdMvStdev]"
 format: general number

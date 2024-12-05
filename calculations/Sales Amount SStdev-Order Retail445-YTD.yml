@@ -1,9 +1,9 @@
-unique_name: Sales Amount SStdev-Order Retail445-YTD
+unique_name: Sales Amount SStdev-Order Retail 445-YTD
 object_type: metric_calc
-label: Sales Amount SStdev-Order Retail445-YTD
-description: Sales Amount Year-to-date Order Retail445
+label: Sales Amount SStdev-Order Retail 445-YTD
+description: Sales Amount Year-to-date Order Retail 445
 expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount Standard Deviation]) THEN NULL \nELSE \n\
-  Avg(PeriodsToDate([Order Date Dimension].[Order Retail445].[Order ReportIng_Year],\
-  \ [Order Date Dimension].[Order Retail445].CurrentMember), [Measures].[Sales Amount Standard Deviation])\
+  Avg(PeriodsToDate([Order Date Dimension].[Order Retail 445].[Order ReportIng Year],\
+  \ [Order Date Dimension].[Order Retail 445].CurrentMember), [Measures].[Sales Amount Standard Deviation])\
   \ \nEND "
 format: "$#,##0.00"

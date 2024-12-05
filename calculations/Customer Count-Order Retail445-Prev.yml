@@ -1,8 +1,8 @@
-unique_name: Customer Count-Order Retail445-Prev
+unique_name: Customer Count-Order Retail 445-Prev
 object_type: metric_calc
-label: 'Customer Count-Order Retail445-Prev '
+label: 'Customer Count-Order Retail 445-Prev '
 description: Order Reporting Hierarchy Previous Period Sales
 expression: "CASE WHEN ISEMPTY([Measures].[Customer Count]) \nTHEN NULL\nELSE\n([Order\
-  \ Date Dimension].[Order Retail445].CurrentMember.PrevMember, [Measures].[Customer Count])\n\
+  \ Date Dimension].[Order Retail 445].CurrentMember.PrevMember, [Measures].[Customer Count])\n\
   END\n"
 format: general number

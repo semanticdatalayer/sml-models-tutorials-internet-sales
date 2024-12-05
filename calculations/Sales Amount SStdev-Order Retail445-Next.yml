@@ -1,8 +1,8 @@
-unique_name: Sales Amount SStdev-Order Retail445-Next
+unique_name: Sales Amount SStdev-Order Retail 445-Next
 object_type: metric_calc
-label: Sales Amount SStdev-Order Retail445-Next
-description: Next Period's  Sales Amount on Order Retail445
+label: Sales Amount SStdev-Order Retail 445-Next
+description: Next Period's  Sales Amount on Order Retail 445
 expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount Standard Deviation]) \nTHEN NULL\nELSE\n\
-  ([Order Date Dimension].[Order Retail445].CurrentMember.NextMember, [Measures].[Sales Amount Standard Deviation])\n\
+  ([Order Date Dimension].[Order Retail 445].CurrentMember.NextMember, [Measures].[Sales Amount Standard Deviation])\n\
   END\n"
 format: "$#,##0.00"

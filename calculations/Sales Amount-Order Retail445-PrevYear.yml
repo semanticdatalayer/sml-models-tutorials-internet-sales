@@ -1,8 +1,8 @@
-unique_name: Sales Amount-Order Retail445-PrevYear
+unique_name: Sales Amount-Order Retail 445-PrevYear
 object_type: metric_calc
-label: Sales Amount-Order Retail445-PrevYear
-description: Order Sales Amount Prev Year (Retail445)
+label: Sales Amount-Order Retail 445-PrevYear
+description: Order Sales Amount Prev Year (Retail 445)
 expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount]) THEN \nNULL \nELSE (ParallelPeriod([Order\
-  \ Date Dimension].[Order Retail445].[Order ReportIng_Year], 1, [Order Date Dimension].[Order\
-  \ Retail445].CurrentMember), [Measures].[Sales Amount]) END"
+  \ Date Dimension].[Order Retail 445].[Order ReportIng Year], 1, [Order Date Dimension].[Order\
+  \ Retail 445].CurrentMember), [Measures].[Sales Amount]) END"
 format: "$#,##0.00"
