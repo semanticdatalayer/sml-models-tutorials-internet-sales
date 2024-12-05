@@ -11,7 +11,7 @@ hierarchies:
 
     levels:
 
-      - unique_name: CountryCity
+      - unique_name: Country
 
       - unique_name: State
 
@@ -19,14 +19,14 @@ hierarchies:
 
         secondary_attributes:
 
-          - unique_name: d_city
+          - unique_name: City
             label: City
             dataset: dim_geo_city
             name_column: city
             key_columns:
               - city
 
-      - unique_name: GeoKeyCity
+      - unique_name: City Key
         is_hidden: true
 
   - unique_name: Geography Zip
@@ -35,20 +35,20 @@ hierarchies:
 
     levels:
 
-      - unique_name: CountryZip
+      - unique_name: Country Zip Hiearchy
 
       - unique_name: Zip Code
 
         secondary_attributes:
 
-          - unique_name: d_postalcode
+          - unique_name: Postal Code
             label: Postal Code
             dataset: dim_geo_postalcode
             name_column: postalcode
             key_columns:
               - postalcode
 
-      - unique_name: GeoKeyZip
+      - unique_name: Zip Key
         is_hidden: true
 
 level_attributes:
@@ -61,7 +61,7 @@ level_attributes:
       - statekey
       - city
 
-  - unique_name: CountryCity
+  - unique_name: Country
     label: Country
     is_unique_key: true
     dataset: dim_geo_country
@@ -69,14 +69,14 @@ level_attributes:
     key_columns:
       - country
 
-  - unique_name: CountryZip
+  - unique_name: Country Zip Hiearchy
     label: Country
     dataset: dim_geo_country
     name_column: country
     key_columns:
       - country
 
-  - unique_name: GeoKeyCity
+  - unique_name: City Key
     label: GeoKey
     is_hidden: true
     is_unique_key: true
@@ -85,7 +85,7 @@ level_attributes:
     key_columns:
       - geographykey
 
-  - unique_name: GeoKeyZip
+  - unique_name: Zip Key
     label: GeoKey
     is_hidden: true
     is_unique_key: true
@@ -126,7 +126,7 @@ relationships:
       join_columns:
         - country
     to:
-      level: CountryZip
+      level: Country Zip Hiearchy
     type: snowflake
 
   - from:
@@ -134,5 +134,5 @@ relationships:
       join_columns:
         - country
     to:
-      level: CountryCity
+      level: Country
     type: snowflake

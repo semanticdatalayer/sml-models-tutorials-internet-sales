@@ -60,7 +60,7 @@ relationships:
         - geographykey
     to:
       dimension: Geography Dimension
-      level: GeoKeyZip
+      level: Zip Key
     type: embedded
 
   - unique_name: CustomerDimension_GenderDimension
@@ -84,5 +84,5 @@ relationships:
         - geographykey
     to:
       dimension: Geography Dimension
-      level: GeoKeyCity
+      level: City Key
     type: embedded
