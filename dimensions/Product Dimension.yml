@@ -14,11 +14,11 @@ hierarchies:
 
       - unique_name: Product Line
 
-      - unique_name: Product category
+      - unique_name: Product Category
 
         secondary_attributes:
 
-          - unique_name: d_productsubcategoryId
+          - unique_name: Product Subcategory ID
             label: Product Subcategory ID
             description: ID of the product category
             dataset: dimproduct
@@ -39,8 +39,8 @@ hierarchies:
 
 level_attributes:
 
-  - unique_name: Product category
-    label: Product category
+  - unique_name: Product Category
+    label: Product Category
     description: Product Sub category
     dataset: dimproduct
     name_column: productsubcategoryname
