@@ -1,8 +1,8 @@
-unique_name: Max Tax Amount-Order Retail445-PrevYear
+unique_name: Max Tax Amount-Order Retail 445-PrevYear
 object_type: metric_calc
-label: Max Tax Amount-Order Retail445-PrevYear
-description: Order Sales Amount Prev Year (Retail445)
+label: Max Tax Amount-Order Retail 445-PrevYear
+description: Order Sales Amount Prev Year (Retail 445)
 expression: "CASE WHEN ISEMPTY([Measures].[Maximum Tax Amount]) THEN \nNULL \nELSE (ParallelPeriod([Order\
-  \ Date Dimension].[Order Retail445].[Order ReportIng_Year], 1, [Order Date Dimension].[Order\
-  \ Retail445].CurrentMember), [Measures].[Maximum Tax Amount]) END"
+  \ Date Dimension].[Order Retail 445].[Order ReportIng Year], 1, [Order Date Dimension].[Order\
+  \ Retail 445].CurrentMember), [Measures].[Maximum Tax Amount]) END"
 format: "$#,##0.00"

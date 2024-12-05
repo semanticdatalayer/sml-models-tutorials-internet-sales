@@ -1,9 +1,9 @@
-unique_name: Max Tax Amount-Order CustomPP445-PrevYearGrowthPct
+unique_name: Max Tax Amount-Order Custom PP445-PrevYearGrowthPct
 object_type: metric_calc
-label: Max Tax Amount-Order CustomPP445-PrevYearGrowthPct
+label: Max Tax Amount-Order Custom PP445-PrevYearGrowthPct
 description: "Percent growth over Previous Period Sales with a custom lookback key.\
-  \  Use with [Order CustomPP445]"
-expression: "CASE WHEN ISEMPTY([Measures].[Max Tax Amount-Order CustomPP445-PrevYear])\
-  \ THEN NULL \nELSE [Measures].[Max Tax Amount-Order CustomPP445-PrevYearGrowth]\
-  \ / [Measures].[Max Tax Amount-Order CustomPP445-PrevYear] \nEND"
+  \  Use with [Order Custom PP445]"
+expression: "CASE WHEN ISEMPTY([Measures].[Max Tax Amount-Order Custom PP445-PrevYear])\
+  \ THEN NULL \nELSE [Measures].[Max Tax Amount-Order Custom PP445-PrevYearGrowth]\
+  \ / [Measures].[Max Tax Amount-Order Custom PP445-PrevYear] \nEND"
 format: percent

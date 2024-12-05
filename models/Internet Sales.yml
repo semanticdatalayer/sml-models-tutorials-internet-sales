@@ -12,7 +12,7 @@ relationships:
         - orderdatekey
     to:
       dimension: Date Dimension
-      level: DayMonth
+      level: Day
     role_play: "Order {0}"
 
   - unique_name: factinternetsales_Date_Dimension_Ship
@@ -22,7 +22,7 @@ relationships:
         - shipdatekey
     to:
       dimension: Date Dimension
-      level: DayMonth
+      level: Day
     role_play: "Ship {0}"
 
   - unique_name: factinternetsales_Date_Dimension_Order_1
@@ -32,7 +32,7 @@ relationships:
         - orderdatekey
     to:
       dimension: Date Dimension
-      level: Reporting_Day
+      level: Reporting Day
     role_play: "Order {0}"
 
   - unique_name: factinternetsales_Date_Dimension_Ship_1
@@ -42,7 +42,7 @@ relationships:
         - shipdatekey
     to:
       dimension: Date Dimension
-      level: Reporting_Day
+      level: Reporting Day
     role_play: "Ship {0}"
 
   - unique_name: factinternetsales_Product_Dimension
@@ -72,7 +72,7 @@ relationships:
         - orderdatekey
     to:
       dimension: Date Dimension
-      level: customday
+      level: Custom Day
     role_play: "Order {0}"
 
   - unique_name: factinternetsales_Date_Dimension_Ship_2
@@ -82,7 +82,7 @@ relationships:
         - shipdatekey
     to:
       dimension: Date Dimension
-      level: customday
+      level: Custom Day
     role_play: "Ship {0}"
 
   - unique_name: factinternetsales_Customer_Dimension
@@ -159,382 +159,382 @@ metrics:
   - unique_name: Average Sold Product per Order
     folder: Time Relative
 
-  - unique_name: Customer Count-Order CustomPP445-PrevYear
+  - unique_name: Customer Count-Order Custom PP445-PrevYear
     folder: Time Relative
 
-  - unique_name: Customer Count-Order CustomPP445-PrevYearGrowth
+  - unique_name: Customer Count-Order Custom PP445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Customer Count-Order CustomPP445-PrevYearGrowthPct
+  - unique_name: Customer Count-Order Custom PP445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-30PrdMvAvg
+  - unique_name: Customer Count-Order Retail 445-30PrdMvAvg
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-30PrdMvAvgPrevYear
+  - unique_name: Customer Count-Order Retail 445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Customer Count-Order Retail 445-30PrdMvAvgPrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-30PrdMvLowerBand
+  - unique_name: Customer Count-Order Retail 445-30PrdMvLowerBand
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-30PrdMvStdev
+  - unique_name: Customer Count-Order Retail 445-30PrdMvStdev
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-30PrdMvUpperBand
+  - unique_name: Customer Count-Order Retail 445-30PrdMvUpperBand
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-Next
+  - unique_name: Customer Count-Order Retail 445-Next
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-Prev
+  - unique_name: Customer Count-Order Retail 445-Prev
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-PrevPeriodGrowth
+  - unique_name: Customer Count-Order Retail 445-PrevPeriodGrowth
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-PrevPeriodGrowthPct
+  - unique_name: Customer Count-Order Retail 445-PrevPeriodGrowthPct
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-PrevYear
+  - unique_name: Customer Count-Order Retail 445-PrevYear
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-PrevYearGrowth
+  - unique_name: Customer Count-Order Retail 445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-PrevYearGrowthPct
+  - unique_name: Customer Count-Order Retail 445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-YTD
+  - unique_name: Customer Count-Order Retail 445-YTD
     folder: Time Relative
 
-  - unique_name: Customer Count-Order Retail445-YTDPrevYear
+  - unique_name: Customer Count-Order Retail 445-YTDPrevYear
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order CustomPP445-PrevYear
+  - unique_name: Estimated Customer Count-Order Custom PP445-PrevYear
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order CustomPP445-PrevYearGrowth
+  - unique_name: Estimated Customer Count-Order Custom PP445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order CustomPP445-PrevYearGrowthPct
+  - unique_name: Estimated Customer Count-Order Custom PP445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-30PrdMvAvg
+  - unique_name: Estimated Customer Count-Order Retail 445-30PrdMvAvg
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-30PrdMvAvgPrevYear
+  - unique_name: Estimated Customer Count-Order Retail 445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: Est Customer Count-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Est Customer Count-Order Retail 445-30PrdMvAvgPrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-30PrdMvLowerBand
+  - unique_name: Estimated Customer Count-Order Retail 445-30PrdMvLowerBand
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-30PrdMvStdev
+  - unique_name: Estimated Customer Count-Order Retail 445-30PrdMvStdev
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-30PrdMvUpperBand
+  - unique_name: Estimated Customer Count-Order Retail 445-30PrdMvUpperBand
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-Next
+  - unique_name: Estimated Customer Count-Order Retail 445-Next
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-Prev
+  - unique_name: Estimated Customer Count-Order Retail 445-Prev
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-PrevPeriodGrowth
+  - unique_name: Estimated Customer Count-Order Retail 445-PrevPeriodGrowth
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-PrevPeriodGrowthPct
+  - unique_name: Estimated Customer Count-Order Retail 445-PrevPeriodGrowthPct
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-PrevYear
+  - unique_name: Estimated Customer Count-Order Retail 445-PrevYear
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-PrevYearGrowth
+  - unique_name: Estimated Customer Count-Order Retail 445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-PrevYearGrowthPct
+  - unique_name: Estimated Customer Count-Order Retail 445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-YTD
+  - unique_name: Estimated Customer Count-Order Retail 445-YTD
     folder: Time Relative
 
-  - unique_name: Estimated Customer Count-Order Retail445-YTDPrevYear
+  - unique_name: Estimated Customer Count-Order Retail 445-YTDPrevYear
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order CustomPP445-PrevYear
+  - unique_name: Last Product Unit Price-Order Custom PP445-PrevYear
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order CustomPP445-PrevYearGrowth
+  - unique_name: Last Product Unit Price-Order Custom PP445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order CustomPP445-PrevYearGrowthPct
+  - unique_name: Last Product Unit Price-Order Custom PP445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-30PrdMvAvg
+  - unique_name: Last Product Unit Price-Order Retail 445-30PrdMvAvg
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-30PrdMvAvgPrevYear
+  - unique_name: Last Product Unit Price-Order Retail 445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: Lst Prod Unit Price-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Lst Prod Unit Price-Order Retail 445-30PrdMvAvgPrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-30PrdMvLowerBand
+  - unique_name: Last Product Unit Price-Order Retail 445-30PrdMvLowerBand
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-30PrdMvStdev
+  - unique_name: Last Product Unit Price-Order Retail 445-30PrdMvStdev
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-30PrdMvUpperBand
+  - unique_name: Last Product Unit Price-Order Retail 445-30PrdMvUpperBand
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-Next
+  - unique_name: Last Product Unit Price-Order Retail 445-Next
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-Prev
+  - unique_name: Last Product Unit Price-Order Retail 445-Prev
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-PrevPeriodGrowth
+  - unique_name: Last Product Unit Price-Order Retail 445-PrevPeriodGrowth
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-PrevPeriodGrowthPct
+  - unique_name: Last Product Unit Price-Order Retail 445-PrevPeriodGrowthPct
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-PrevYear
+  - unique_name: Last Product Unit Price-Order Retail 445-PrevYear
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-PrevYearGrowth
+  - unique_name: Last Product Unit Price-Order Retail 445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-PrevYearGrowthPct
+  - unique_name: Last Product Unit Price-Order Retail 445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-YTD
+  - unique_name: Last Product Unit Price-Order Retail 445-YTD
     folder: Time Relative
 
-  - unique_name: Last Product Unit Price-Order Retail445-YTDPrevYear
+  - unique_name: Last Product Unit Price-Order Retail 445-YTDPrevYear
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order CustomPP445-PrevYear
+  - unique_name: Max Tax Amount-Order Custom PP445-PrevYear
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order CustomPP445-PrevYearGrowth
+  - unique_name: Max Tax Amount-Order Custom PP445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order CustomPP445-PrevYearGrowthPct
+  - unique_name: Max Tax Amount-Order Custom PP445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-30PrdMvAvg
+  - unique_name: Max Tax Amount-Order Retail 445-30PrdMvAvg
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-30PrdMvAvgPrevYear
+  - unique_name: Max Tax Amount-Order Retail 445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Max Tax Amount-Order Retail 445-30PrdMvAvgPrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-30PrdMvLowerBand
+  - unique_name: Max Tax Amount-Order Retail 445-30PrdMvLowerBand
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-30PrdMvStdev
+  - unique_name: Max Tax Amount-Order Retail 445-30PrdMvStdev
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-30PrdMvUpperBand
+  - unique_name: Max Tax Amount-Order Retail 445-30PrdMvUpperBand
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-Next
+  - unique_name: Max Tax Amount-Order Retail 445-Next
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-Prev
+  - unique_name: Max Tax Amount-Order Retail 445-Prev
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-PrevPeriodGrowth
+  - unique_name: Max Tax Amount-Order Retail 445-PrevPeriodGrowth
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-PrevPeriodGrowthPct
+  - unique_name: Max Tax Amount-Order Retail 445-PrevPeriodGrowthPct
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-PrevYear
+  - unique_name: Max Tax Amount-Order Retail 445-PrevYear
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-PrevYearGrowth
+  - unique_name: Max Tax Amount-Order Retail 445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-PrevYearGrowthPct
+  - unique_name: Max Tax Amount-Order Retail 445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-YTD
+  - unique_name: Max Tax Amount-Order Retail 445-YTD
     folder: Time Relative
 
-  - unique_name: Max Tax Amount-Order Retail445-YTDPrevYear
+  - unique_name: Max Tax Amount-Order Retail 445-YTDPrevYear
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order CustomPP445-PrevYear
+  - unique_name: Sales Amount SStdev-Order Custom PP445-PrevYear
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order CustomPP445-PrevYearGrowth
+  - unique_name: Sales Amount SStdev-Order Custom PP445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order CustomPP445-PrevYearGrowthPct
+  - unique_name: Sales Amount SStdev-Order Custom PP445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-30PrdMvAvg
+  - unique_name: Sales Amount SStdev-Order Retail 445-30PrdMvAvg
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-30PrdMvAvgPrevYear
+  - unique_name: Sales Amount SStdev-Order Retail 445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Sales Amount SStdev-Order Retail 445-30PrdMvAvgPrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-30PrdMvLowerBand
+  - unique_name: Sales Amount SStdev-Order Retail 445-30PrdMvLowerBand
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-30PrdMvStdev
+  - unique_name: Sales Amount SStdev-Order Retail 445-30PrdMvStdev
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-30PrdMvUpperBand
+  - unique_name: Sales Amount SStdev-Order Retail 445-30PrdMvUpperBand
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-Next
+  - unique_name: Sales Amount SStdev-Order Retail 445-Next
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-Prev
+  - unique_name: Sales Amount SStdev-Order Retail 445-Prev
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-PrevPeriodGrowth
+  - unique_name: Sales Amount SStdev-Order Retail 445-PrevPeriodGrowth
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-PrevPeriodGrowthPct
+  - unique_name: Sales Amount SStdev-Order Retail 445-PrevPeriodGrowthPct
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-PrevYear
+  - unique_name: Sales Amount SStdev-Order Retail 445-PrevYear
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-PrevYearGrowth
+  - unique_name: Sales Amount SStdev-Order Retail 445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-PrevYearGrowthPct
+  - unique_name: Sales Amount SStdev-Order Retail 445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-YTD
+  - unique_name: Sales Amount SStdev-Order Retail 445-YTD
     folder: Time Relative
 
-  - unique_name: Sales Amount SStdev-Order Retail445-YTDPrevYear
+  - unique_name: Sales Amount SStdev-Order Retail 445-YTDPrevYear
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order CustomPP445-PrevYear
+  - unique_name: Sales Amount-Order Custom PP445-PrevYear
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order CustomPP445-PrevYearGrowth
+  - unique_name: Sales Amount-Order Custom PP445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order CustomPP445-PrevYearGrowthPct
+  - unique_name: Sales Amount-Order Custom PP445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-30PrdMvAvg
+  - unique_name: Sales Amount-Order Retail 445-30PrdMvAvg
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-30PrdMvAvgPrevYear
+  - unique_name: Sales Amount-Order Retail 445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: Sales Amount-Order Retail 445-30PrdMvAvgPrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-30PrdMvLowerBand
+  - unique_name: Sales Amount-Order Retail 445-30PrdMvLowerBand
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-30PrdMvStdev
+  - unique_name: Sales Amount-Order Retail 445-30PrdMvStdev
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-30PrdMvUpperBand
+  - unique_name: Sales Amount-Order Retail 445-30PrdMvUpperBand
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-Next
+  - unique_name: Sales Amount-Order Retail 445-Next
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-Prev
+  - unique_name: Sales Amount-Order Retail 445-Prev
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-PrevPeriodGrowth
+  - unique_name: Sales Amount-Order Retail 445-PrevPeriodGrowth
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-PrevPeriodGrowthPct
+  - unique_name: Sales Amount-Order Retail 445-PrevPeriodGrowthPct
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-PrevYear
+  - unique_name: Sales Amount-Order Retail 445-PrevYear
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-PrevYearGrowth
+  - unique_name: Sales Amount-Order Retail 445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-PrevYearGrowthPct
+  - unique_name: Sales Amount-Order Retail 445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-YTD
+  - unique_name: Sales Amount-Order Retail 445-YTD
     folder: Time Relative
 
-  - unique_name: Sales Amount-Order Retail445-YTDPrevYear
+  - unique_name: Sales Amount-Order Retail 445-YTDPrevYear
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order CustomPP445-PrevYear
+  - unique_name: SoldProductNDC-Order Custom PP445-PrevYear
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order CustomPP445-PrevYearGrowth
+  - unique_name: SoldProductNDC-Order Custom PP445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order CustomPP445-PrevYearGrowthPct
+  - unique_name: SoldProductNDC-Order Custom PP445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-30PrdMvAvg
+  - unique_name: SoldProductNDC-Order Retail 445-30PrdMvAvg
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-30PrdMvAvgPrevYear
+  - unique_name: SoldProductNDC-Order Retail 445-30PrdMvAvgPrevYear
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-30PrdMvAvgPrevYearGrowthPct
+  - unique_name: SoldProductNDC-Order Retail 445-30PrdMvAvgPrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-30PrdMvLowerBand
+  - unique_name: SoldProductNDC-Order Retail 445-30PrdMvLowerBand
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-30PrdMvStdev
+  - unique_name: SoldProductNDC-Order Retail 445-30PrdMvStdev
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-30PrdMvUpperBand
+  - unique_name: SoldProductNDC-Order Retail 445-30PrdMvUpperBand
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-Next
+  - unique_name: SoldProductNDC-Order Retail 445-Next
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-Prev
+  - unique_name: SoldProductNDC-Order Retail 445-Prev
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-PrevPeriodGrowth
+  - unique_name: SoldProductNDC-Order Retail 445-PrevPeriodGrowth
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-PrevPeriodGrowthPct
+  - unique_name: SoldProductNDC-Order Retail 445-PrevPeriodGrowthPct
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-PrevYear
+  - unique_name: SoldProductNDC-Order Retail 445-PrevYear
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-PrevYearGrowth
+  - unique_name: SoldProductNDC-Order Retail 445-PrevYearGrowth
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-PrevYearGrowthPct
+  - unique_name: SoldProductNDC-Order Retail 445-PrevYearGrowthPct
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-YTD
+  - unique_name: SoldProductNDC-Order Retail 445-YTD
     folder: Time Relative
 
-  - unique_name: SoldProductNDC-Order Retail445-YTDPrevYear
+  - unique_name: SoldProductNDC-Order Retail 445-YTDPrevYear
     folder: Time Relative
 
 perspectives:

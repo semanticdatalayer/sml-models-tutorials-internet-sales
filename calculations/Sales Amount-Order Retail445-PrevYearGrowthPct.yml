@@ -1,8 +1,8 @@
-unique_name: Sales Amount-Order Retail445-PrevYearGrowthPct
+unique_name: Sales Amount-Order Retail 445-PrevYearGrowthPct
 object_type: metric_calc
-label: Sales Amount-Order Retail445-PrevYearGrowthPct
-description: Order Retail445 Sales Amount Year-over-year growth as percent
-expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount-Order Retail445-PrevYear])\
-  \ THEN NULL \nELSE [Measures].[Sales Amount-Order Retail445-PrevYearGrowth] / [Measures].[Sales\
-  \ Amount-Order Retail445-PrevYear] \nEND"
+label: Sales Amount-Order Retail 445-PrevYearGrowthPct
+description: Order Retail 445 Sales Amount Year-over-year growth as percent
+expression: "CASE WHEN ISEMPTY([Measures].[Sales Amount-Order Retail 445-PrevYear])\
+  \ THEN NULL \nELSE [Measures].[Sales Amount-Order Retail 445-PrevYearGrowth] / [Measures].[Sales\
+  \ Amount-Order Retail 445-PrevYear] \nEND"
 format: percent

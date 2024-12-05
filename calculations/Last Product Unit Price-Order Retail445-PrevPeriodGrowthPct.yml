@@ -1,10 +1,10 @@
-unique_name: Last Product Unit Price-Order Retail445-PrevPeriodGrowthPct
+unique_name: Last Product Unit Price-Order Retail 445-PrevPeriodGrowthPct
 object_type: metric_calc
-label: Last Product Unit Price-Order Retail445-PrevPeriodGrowthPct
-description: Order Retail445 Previous Period Growth Percent
+label: Last Product Unit Price-Order Retail 445-PrevPeriodGrowthPct
+description: Order Retail 445 Previous Period Growth Percent
 expression: |-
-  CASE WHEN ISEMPTY([Measures].[Last Product Unit Price-Order Retail445-Prev]) THEN NULL
+  CASE WHEN ISEMPTY([Measures].[Last Product Unit Price-Order Retail 445-Prev]) THEN NULL
   ELSE
-  (([Order Date Dimension].[Order Retail445].CurrentMember, [Measures].[Last Product Unit Price]) - [Measures].[Last Product Unit Price-Order Retail445-Prev]) / [Measures].[Last Product Unit Price-Order Retail445-Prev]
+  (([Order Date Dimension].[Order Retail 445].CurrentMember, [Measures].[Last Product Unit Price]) - [Measures].[Last Product Unit Price-Order Retail 445-Prev]) / [Measures].[Last Product Unit Price-Order Retail 445-Prev]
   END
 format: percent
