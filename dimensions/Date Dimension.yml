@@ -273,7 +273,6 @@ hierarchies:
           - level: Custom Year
             key_columns:
               - name: reporting_quarter_lykey
-                data_type: datetime
 
         secondary_attributes:
 
@@ -290,7 +289,6 @@ hierarchies:
           - level: Custom Year
             key_columns:
               - name: reporting_month_lykey
-                data_type: datetime
 
         secondary_attributes:
 
@@ -326,7 +324,6 @@ hierarchies:
           - level: Custom Year
             key_columns:
               - name: reporting_week_lykey
-                data_type: datetime
 
         secondary_attributes:
 
@@ -353,7 +350,6 @@ hierarchies:
           - level: Custom Year
             key_columns:
               - name: reporting_day_lykey
-                data_type: datetime
 
         secondary_attributes:
 
