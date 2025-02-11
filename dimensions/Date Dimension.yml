@@ -272,7 +272,7 @@ hierarchies:
         parallel_periods:
           - level: Custom Year
             key_columns:
-              - name: reporting_quarter_lykey
+              - reporting_quarter_lykey
 
         secondary_attributes:
 
@@ -288,7 +288,7 @@ hierarchies:
         parallel_periods:
           - level: Custom Year
             key_columns:
-              - name: reporting_month_lykey
+              - reporting_month_lykey
 
         secondary_attributes:
 
@@ -323,7 +323,7 @@ hierarchies:
         parallel_periods:
           - level: Custom Year
             key_columns:
-              - name: reporting_week_lykey
+              - reporting_week_lykey
 
         secondary_attributes:
 
@@ -349,7 +349,7 @@ hierarchies:
         parallel_periods:
           - level: Custom Year
             key_columns:
-              - name: reporting_day_lykey
+              - reporting_day_lykey
 
         secondary_attributes:
 
