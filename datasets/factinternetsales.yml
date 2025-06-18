@@ -6,9 +6,9 @@ table: factinternetsales
 
 columns:
   - name: currencykey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: customerkey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: calculated tax
     data_type: double
     sql: "\"salesamount\"*0.085"
@@ -20,21 +20,21 @@ columns:
   - name: orderdate
     data_type: string
   - name: orderdatekey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: orderquantity
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: productkey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: salesamount
     data_type: double
   - name: salesorderlinenumber
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: salesordernumber
     data_type: string
   - name: sales_reasons
     data_type: string
   - name: shipdatekey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: taxamt
     data_type: double
   - name: unitprice

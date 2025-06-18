@@ -10,6 +10,6 @@ columns:
   - name: citystatekey
     data_type: string
   - name: geographykey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: statekey
     data_type: string

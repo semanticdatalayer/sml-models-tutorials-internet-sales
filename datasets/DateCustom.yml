@@ -6,27 +6,27 @@ table: datecustom
 
 columns:
   - name: datekey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: date_name
     data_type: string
   - name: day_of_half_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: day_of_half_year_name
     data_type: string
   - name: day_of_month
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: day_of_month_name
     data_type: string
   - name: day_of_quarter
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: day_of_quarter_name
     data_type: string
   - name: day_of_week
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: day_of_week_name
     data_type: string
   - name: day_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: day_of_year_name
     data_type: string
   - name: half_year
@@ -34,7 +34,7 @@ columns:
   - name: half_year_name
     data_type: string
   - name: half_year_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: half_year_of_year_name
     data_type: string
   - name: iso_8601_day
@@ -42,11 +42,11 @@ columns:
   - name: iso_8601_day_name
     data_type: string
   - name: iso_8601_day_of_week
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: iso_8601_day_of_week_name
     data_type: string
   - name: iso_8601_day_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: iso_8601_day_of_year_name
     data_type: string
   - name: iso_8601_week
@@ -54,7 +54,7 @@ columns:
   - name: iso_8601_week_name
     data_type: string
   - name: iso_8601_week_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: iso_8601_week_of_year_name_reporting_day_ctl
     data_type: string
   - name: iso_8601_year
@@ -66,15 +66,15 @@ columns:
   - name: month_name
     data_type: string
   - name: month_of_half_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: month_of_half_year_name
     data_type: string
   - name: month_of_quarter
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: month_of_quarter_name
     data_type: string
   - name: month_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: month_of_year_name
     data_type: string
   - name: pk_date
@@ -84,11 +84,11 @@ columns:
   - name: quarter_name
     data_type: string
   - name: quarter_of_half_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: quarter_of_half_year_name
     data_type: string
   - name: quarter_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: quarter_of_year_name
     data_type: string
   - name: reporting_day
@@ -98,23 +98,23 @@ columns:
   - name: reporting_day_name
     data_type: string
   - name: reporting_day_of_half_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_day_of_half_year_name
     data_type: string
   - name: reporting_day_of_month
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_day_of_month_name
     data_type: string
   - name: reporting_day_of_quarter
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_day_of_quarter_name
     data_type: string
   - name: reporting_day_of_week
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_day_of_week_name
     data_type: string
   - name: reporting_day_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_day_of_year_name
     data_type: string
   - name: reporting_half_year
@@ -124,7 +124,7 @@ columns:
   - name: reporting_half_year_name
     data_type: string
   - name: reporting_half_year_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name:  reporting_half_year_of_year_name
     data_type: string
   - name: reporting_month
@@ -136,15 +136,15 @@ columns:
   - name: reporting_month_name2
     data_type: string
   - name: reporting_month_of_half_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_month_of_half_year_name
     data_type: string
   - name: reporting_month_of_quarter
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_month_of_quarter_name
     data_type: string
   - name: reporting_month_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_month_of_year_name
     data_type: string
   - name: reporting_quarter
@@ -154,11 +154,11 @@ columns:
   - name: reporting_quarter_name
     data_type: string
   - name: reporting_quarter_of_half_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_quarter_of_half_year_name
     data_type: string
   - name: reporting_quarter_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_quarter_of_year_name
     data_type: string
   - name: reporting_week
@@ -170,19 +170,19 @@ columns:
   - name: reporting_week_name
     data_type: string
   - name: reporting_week_of_half_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_week_of_half_year_name
     data_type: string
   - name: reporting_week_of_month
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_week_of_month_name
     data_type: string
   - name: reporting_week_of_quarter
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_week_of_quarter_name
     data_type: string
   - name: reporting_week_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: reporting_week_of_year_name
     data_type: string
   - name: reporting_year
@@ -196,7 +196,7 @@ columns:
   - name: week_name
     data_type: string
   - name: week_of_year
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: week_of_year_name
     data_type: string
   - name: year

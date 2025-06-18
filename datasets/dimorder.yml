@@ -6,7 +6,7 @@ table: dimorder
 
 columns:
   - name: currencykey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: currency_name
     data_type: string
   - name: linename
@@ -16,7 +16,7 @@ columns:
   - name: ordernumberlinekey
     data_type: string
   - name: salesorderlinenumber
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: salesordernumber
     data_type: string
   - name: type

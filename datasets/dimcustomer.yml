@@ -6,7 +6,7 @@ table: dimcustomer
 
 columns:
   - name: customerkey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: datefirstpurchase
     data_type: string
   - name: firstname
@@ -16,7 +16,7 @@ columns:
   - name: gender
     data_type: string
   - name: geographykey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: lastname
     data_type: string
   - name: occupation

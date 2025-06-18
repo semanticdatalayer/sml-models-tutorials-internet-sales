@@ -10,6 +10,6 @@ columns:
   - name: countrypostalcode
     data_type: string
   - name: geographykey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: postalcode
     data_type: string

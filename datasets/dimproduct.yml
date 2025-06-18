@@ -10,11 +10,11 @@ columns:
   - name: listprice
     data_type: double
   - name: productkey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: productline
     data_type: string
   - name: productsubcategorykey
-    data_type: "decimal(38,0)"
+    data_type: "long"
   - name: productsubcategoryname
     data_type: string
   - name: startdate
