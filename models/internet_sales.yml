@@ -1,6 +1,7 @@
 unique_name: internet_sales
 object_type: model
 label: Internet Sales
+description: The Internet Sales model is based on AdventureWorks, a sample relational database from Microsoft that represents a fictional global manufacturing company. It models real-world business processes like product design, sales, purchasing, manufacturing, and human resources, making it a popular choice for learning, demos, and testing SQL Server features, data modeling, and analytics scenarios.
 visible: true
 
 relationships:
