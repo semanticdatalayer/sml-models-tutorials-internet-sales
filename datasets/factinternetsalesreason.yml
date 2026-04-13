@@ -1,0 +1,13 @@
+unique_name: factinternetsalesreason
+object_type: dataset
+label: factinternetsalesreason
+connection_id: Connection - Internet Sales
+table: factinternetsalesreason
+
+columns:
+  - name: salesordernumber
+    data_type: string
+  - name: salesorderlinenumber
+    data_type: long
+  - name: salesreasonkey
+    data_type: long

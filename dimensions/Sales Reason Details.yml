@@ -1,0 +1,34 @@
+unique_name: Sales Reason Details
+object_type: dimension
+label: Sales Reason Details
+type: standard
+
+level_attributes:
+
+  - unique_name: Sales Reason Name
+    label: Sales Reason Name
+    dataset: dimsalesreason
+    key_columns:
+      - salesreasonkey
+    name_column: salesreasonname
+    is_unique_key: true
+
+hierarchies:
+
+  - unique_name: Sales Reason Details Hierarchy
+    label: Sales Reason Details
+    folder: Sales Reason
+    filter_empty: 'yes'
+
+    levels:
+
+      - unique_name: Sales Reason Name
+
+        secondary_attributes:
+
+          - unique_name: Sales Reason Group
+            label: Sales Reason Group
+            dataset: dimsalesreason
+            key_columns:
+              - salesreasonkey
+            name_column: salesreasongroup

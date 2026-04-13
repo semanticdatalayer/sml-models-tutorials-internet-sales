@@ -1,0 +1,40 @@
+unique_name: Sales Reason Dimension
+object_type: dimension
+label: Sales Reason
+type: standard
+
+level_attributes:
+
+  - unique_name: Sales Reason Bridge
+    label: Sales Order Reason
+    dataset: factinternetsalesreason
+    key_columns:
+      - salesordernumber
+      - salesorderlinenumber
+    name_column: salesordernumber
+
+hierarchies:
+
+  - unique_name: Sales Reason Hierarchy
+    label: Sales Reason
+    folder: Sales Reason
+    filter_empty: 'yes'
+
+    levels:
+
+      - unique_name: Sales Reason Bridge
+
+relationships:
+
+  - unique_name: Sales_Reason_Bridge_to_Details
+    from:
+      hierarchy: Sales Reason Hierarchy
+      level: Sales Reason Bridge
+      dataset: factinternetsalesreason
+      join_columns:
+        - salesreasonkey
+    to:
+      dimension: Sales Reason Details
+      level: Sales Reason Name
+    type: embedded
+    m2m: true

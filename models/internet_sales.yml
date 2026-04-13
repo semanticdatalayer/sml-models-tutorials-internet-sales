@@ -95,6 +95,16 @@ relationships:
       dimension: Customer Dimension
       level: Customer Name
 
+  - unique_name: factinternetsales_Sales_Reason_Dimension
+    from:
+      dataset: factinternetsales
+      join_columns:
+        - salesordernumber
+        - salesorderlinenumber
+    to:
+      dimension: Sales Reason Dimension
+      level: Sales Reason Bridge
+
 dimensions:
   - Color Dimension
   - Size Dimension
