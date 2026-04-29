@@ -230,6 +230,24 @@ hierarchies:
               - reporting_half_year
             name_column: reporting_half_year_name
             sort_column: reporting_half_year_name
+      - unique_name: Reporting Quarter
+        secondary_attributes:
+          - unique_name: Reporting Quarter Of Year
+            label: Reporting Quarter Of Year
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - reporting_quarter_of_year
+            name_column: reporting_quarter_of_year_name
+            sort_column: reporting_quarter_of_year_name
+          - unique_name: Reporting Quarter Of Half Year
+            label: Reporting Quarter Of Half Year
+            dataset: DateCustom
+            folder: Date Attributes
+            key_columns:
+              - reporting_quarter_of_half_year
+            name_column: reporting_quarter_of_half_year_name
+            sort_column: reporting_quarter_of_half_year_name
       - unique_name: Reporting Month
         secondary_attributes:
           - unique_name: Reporting Month Name
@@ -521,6 +539,14 @@ level_attributes:
     name_column: reporting_month_name2
     sort_column: reporting_month
     time_unit: month
+  - unique_name: Reporting Quarter
+    label: Reporting Quarter
+    dataset: DateCustom
+    key_columns:
+      - reporting_quarter
+    name_column: reporting_quarter_name
+    sort_column: reporting_quarter
+    time_unit: quarter
   - unique_name: Reporting Week
     label: ReportIng Week
     description: Week level of the 4-4-5 calendar
