@@ -1,0 +1,13 @@
+unique_name: dimsalesreason
+object_type: dataset
+label: dimsalesreason
+connection_id: Connection - Internet Sales
+table: dimsalesreason
+
+columns:
+  - name: salesreasonkey
+    data_type: long
+  - name: salesreasonname
+    data_type: string
+  - name: salesreasonreasontype
+    data_type: string
