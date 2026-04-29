@@ -103,6 +103,15 @@ calculation_groups:
         template: Year to Date
         use_input_metric_format: true
     folder: Date Attributes
+  - unique_name: Date Dimension Custom Calculation Group
+    label: Date Dimension Custom Calculation Group
+    calculated_members:
+      - unique_name: Current (Custom)
+        description: >-
+          The measure's value for the current dimension members in the query.
+          It's been customized for illustrative purposes.
+        expression: ([Date Dimension].CurrentMember, [Measures].currentMember)
+        use_input_metric_format: true
 hierarchies:
   - unique_name: Date Month Hierarchy
     label: Date Month Hierarchy
