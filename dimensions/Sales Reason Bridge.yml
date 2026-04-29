@@ -1,0 +1,43 @@
+unique_name: Sales Reason Bridge
+object_type: dimension
+label: Sales Reason Bridge
+type: standard
+
+level_attributes:
+
+  - unique_name: Sales Reason Bridge Key
+    label: Sales Reason Bridge Key
+    is_hidden: true
+    dataset: factinternetsalesreason
+    name_column: salesordernumber
+    key_columns:
+      - salesordernumber
+      - salesorderlinenumber
+
+hierarchies:
+
+  - unique_name: Sales Reason Bridge Hierarchy
+    label: Sales Reason Bridge
+    folder: Sales Reason
+    filter_empty: 'yes'
+    is_hidden: true
+
+    levels:
+
+      - unique_name: Sales Reason Bridge Key
+        is_hidden: true
+
+relationships:
+
+  - unique_name: SalesReasonBridge_SalesReasonDimension
+    from:
+      hierarchy: Sales Reason Bridge Hierarchy
+      level: Sales Reason Bridge Key
+      dataset: factinternetsalesreason
+      join_columns:
+        - salesreasonkey
+    to:
+      dimension: Sales Reason Dimension
+      level: Sales Reason
+    type: embedded
+    m2m: true
