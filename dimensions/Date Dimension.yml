@@ -5,7 +5,9 @@ description: Date Dimension that includes Gregorian, ISO8601 and Retail 445 cale
 calculation_groups:
   - unique_name: Date Dimension Time Calculations
     label: Date Dimension Time Calculations
-    description: These are time relative calculations for the Date Dimension
+    description: >-
+      These are time-related calculations for the Date Dimension that use all
+      the available templates.
     calculated_members:
       - unique_name: Current
         description: The measure's value for the current dimension members in the query.
@@ -105,6 +107,9 @@ calculation_groups:
     folder: Date Attributes
   - unique_name: Date Dimension Custom Calculation Group
     label: Date Dimension Custom Calculation Group
+    description: >-
+      These are time-related calculations for the Date Dimension that
+      demonstrate the use of a custom expression.
     calculated_members:
       - unique_name: Current (Custom)
         description: >-
