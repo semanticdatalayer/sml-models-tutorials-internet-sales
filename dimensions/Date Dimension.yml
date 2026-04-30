@@ -117,6 +117,7 @@ calculation_groups:
           It's been customized for illustrative purposes.
         expression: ([Date Dimension].CurrentMember, [Measures].currentMember)
         use_input_metric_format: true
+    folder: Date Attributes
 hierarchies:
   - unique_name: Date Month Hierarchy
     label: Date Month Hierarchy
