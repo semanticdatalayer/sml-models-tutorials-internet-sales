@@ -1,6 +1,7 @@
 unique_name: factinternetsales
 object_type: dataset
 label: factinternetsales
+description: "Internet sales fact table at order line grain: order quantity, sales amount, tax, unit price, plus date, customer, product, and currency keys. Includes derived calculated tax and product_info map columns (color, size, style, weight)."
 connection_id: Connection - Internet Sales
 table: factinternetsales
 

@@ -1,7 +1,7 @@
 unique_name: Sales Amount 30 Period Moving Average
 object_type: metric_calc
 label: Sales Amount 30 Period Moving Average
-description: '30 Period Moving Average of Sales Amount.  Meant to execute at Day Level  of '
+description: 30 period moving / rolling / trailing average of Sales Amount (revenue) over the current period and the prior 29 on the Order Retail 445 calendar. Meant to execute at the Day level of the Order Retail 445 hierarchy; not the Customer Count moving average.
 expression: "Avg([Order Date Dimension].[Order Retail 445].CurrentMember.Lag(29):[Order\
   \ Date Dimension].[Order Retail 445].CurrentMember, [Measures].[Sales Amount])"
 format: "$#,##0.00"

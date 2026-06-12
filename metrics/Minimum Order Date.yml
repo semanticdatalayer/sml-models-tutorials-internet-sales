@@ -1,6 +1,7 @@
 unique_name: Minimum Order Date
 object_type: metric
 label: Minimum Order Date
+description: "Earliest / first order date key; when the first order was placed. Contrast Maximum Order Date (latest / most recent)."
 calculation_method: minimum
 dataset: factinternetsales
 column: orderdatekey

@@ -9,6 +9,7 @@ hierarchies:
   - unique_name: Size
     label: Size
     folder: Product Attributes
+    description: "Single-level grouping of products by size."
 
     levels:
 
@@ -19,6 +20,7 @@ level_attributes:
   - unique_name: Size
     label: Size
     dataset: factinternetsales
+    description: "Product size (e.g. S, M, L, XL or numeric sizes like 38, 42). Parsed from the fact product_info map column; degenerate attribute, contrast Color, Style, Weight."
     name_column: size
     key_columns:
       - size

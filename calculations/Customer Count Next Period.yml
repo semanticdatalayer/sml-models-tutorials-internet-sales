@@ -1,7 +1,7 @@
 unique_name: Customer Count Next Period
 object_type: metric_calc
 label: Customer Count Next Period
-description: Next Period's  Sales Amount on Order Retail 445
+description: Next period's distinct Customer Count (lead one period, next / following period) on the Order Retail 445 calendar; NULL when Customer Count is empty. Not prior period, not Sales Amount.
 expression: "CASE WHEN ISEMPTY([Measures].[Customer Count]) \nTHEN NULL\nELSE\n([Order\
   \ Date Dimension].[Order Retail 445].CurrentMember.NextMember, [Measures].[Customer Count])\n\
   END\n"

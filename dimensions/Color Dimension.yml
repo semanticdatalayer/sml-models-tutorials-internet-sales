@@ -9,6 +9,7 @@ hierarchies:
   - unique_name: Color
     label: Color
     folder: Product Attributes
+    description: "Single-level grouping of products by color / colour."
 
     levels:
 

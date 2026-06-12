@@ -1,4 +1,5 @@
 unique_name: Average Est Customer Count per Order
 object_type: metric_calc
 label: Average Est Customer Count per Order
+description: "Estimated customers per unit ordered: ratio of Estimated Customer Count (approximate distinct) divided by Order Quantity. Contrast Average Customer Count per Order (exact)."
 expression: "([Measures].[Estimated Customer Count] / [Measures].[Order Quantity])"

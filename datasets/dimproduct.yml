@@ -1,6 +1,7 @@
 unique_name: dimproduct
 object_type: dataset
 label: dimproduct
+description: "Product master: English product name, product line, subcategory, and list price."
 connection_id: Connection - Internet Sales
 table: dimproduct
 

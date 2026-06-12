@@ -2,11 +2,13 @@ unique_name: Sales Reason Dimension
 object_type: dimension
 label: Sales Reason Dimension
 type: standard
+description: "Reasons customers gave for purchasing (e.g. Price, On Promotion, Review) grouped by reason type. Joined many-to-many to sales via the hidden Sales Reason Bridge."
 
 hierarchies:
 
   - unique_name: Sales Reason Hierarchy
     label: Sales Reason Hierarchy
+    description: "Purchase reason rollup Reason Type > Sales Reason (e.g. Marketing > Television Advertisement)."
     folder: Sales Reason
     filter_empty: 'yes'
 
@@ -20,6 +22,7 @@ level_attributes:
 
   - unique_name: Reason Type
     label: Reason Type
+    description: "Category / type of purchase reason (e.g. Marketing, Promotion, Other). Parent level of Sales Reason."
     dataset: dimsalesreason
     name_column: salesreasonreasontype
     key_columns:
@@ -28,6 +31,7 @@ level_attributes:
 
   - unique_name: Sales Reason
     label: Sales Reason
+    description: "Specific reason a customer gave for a purchase (e.g. Price, On Promotion, Review). Leaf level under Reason Type."
     is_unique_key: true
     dataset: dimsalesreason
     name_column: salesreasonname

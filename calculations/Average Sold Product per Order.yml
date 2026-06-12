@@ -1,4 +1,5 @@
 unique_name: Average Sold Product per Order
 object_type: metric_calc
 label: Average Sold Product per Order
+description: "Product rows per unit ordered: ratio of Sold Product Non Distinct Count divided by Order Quantity. Volume mix ratio, not a customer count ratio."
 expression: "([Measures].[Sold Product Non Distinct Count] / [Measures].[Order Quantity])"

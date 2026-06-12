@@ -1,12 +1,14 @@
 unique_name: Gender Dimension
 object_type: dimension
 label: Gender Dimension
+description: "Customer gender / sex grouping (e.g. Male, Female) for demographic analysis. Customer attribute dimension, separate from Occupation and Geography."
 type: standard
 
 hierarchies:
 
   - unique_name: Gender Hierarchy
     label: Gender Hierarchy
+    description: "Single-level grouping of customers by gender / sex (e.g. Male, Female)."
     folder: Customer Attributes
 
     levels:
@@ -17,6 +19,7 @@ level_attributes:
 
   - unique_name: Gender
     label: Gender
+    description: "Customer gender / sex value (e.g. Male, Female). Customer demographic, not a product attribute."
     is_unique_key: true
     dataset: dimgender
     name_column: gendername

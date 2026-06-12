@@ -1,6 +1,7 @@
 unique_name: Customer Count
 object_type: metric
 label: Customer Count
+description: "Distinct customers / unique buyers who placed internet sales orders. Exact distinct count; contrast Estimated Customer Count (approximate, faster)."
 calculation_method: count distinct
 format: general number
 dataset: factinternetsales

@@ -1,4 +1,5 @@
 unique_name: Average Sales per Order
 object_type: metric_calc
 label: Average Sales per Order
+description: "Average selling price / revenue per unit ordered: Sales Amount divided by Order Quantity. Dollar yield per unit; contrast Average Sales Amount (plain average of line amounts)."
 expression: "([Measures].[Sales Amount] / [Measures].[Order Quantity])"
