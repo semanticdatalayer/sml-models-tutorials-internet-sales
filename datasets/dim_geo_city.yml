@@ -1,6 +1,7 @@
 unique_name: dim_geo_city
 object_type: dataset
 label: dim_geo_city
+description: "Geography lookup at city grain: geography key, city, state key, and city-state composite key."
 connection_id: Connection - Internet Sales
 table: dim_geo_city
 

@@ -130,6 +130,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Quarter Number
             label: Quarter Number
+            description: "Quarter number within the year (1-4), standard Gregorian calendar. Role-played as Order or Ship date."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -140,6 +141,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Month of Year
             label: Month Of Year
+            description: "Month number within the year (1-12), standard Gregorian calendar. Role-played as Order or Ship date."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -150,6 +152,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Day Of Month
             label: Day Of Month
+            description: "Day number within the month (1-31), standard calendar Month hierarchy. Role-played as Order or Ship date."
             associated_hierarchy: Date Month Hierarchy
             dataset: DateCustom
             folder: Date Attributes
@@ -159,6 +162,7 @@ hierarchies:
             sort_column: day_of_month
           - unique_name: Day Of Week Name
             label: Day Of Week Name
+            description: "Weekday name (e.g. Monday), standard calendar, Date Month Hierarchy. Role-played as Order or Ship date; contrast Day Of Week Name Week (Week hierarchy variant)."
             associated_hierarchy: Date Month Hierarchy
             dataset: DateCustom
             folder: Date Attributes
@@ -168,6 +172,7 @@ hierarchies:
             sort_column: day_of_week_name
           - unique_name: Day Of Week Number
             label: Day Of Week Number
+            description: "Weekday number (1-7), standard calendar, Date Month Hierarchy. Role-played as Order or Ship date; contrast Day Of Week Number Week."
             associated_hierarchy: Date Month Hierarchy
             dataset: DateCustom
             folder: Date Attributes
@@ -177,6 +182,7 @@ hierarchies:
             sort_column: day_of_week
           - unique_name: Day Attribute
             label: Day Attribute
+            description: "Full calendar date at day grain on the Date Month Hierarchy. Role-played as Order or Ship date; contrast Day Week (Week hierarchy variant)."
             associated_hierarchy: Date Month Hierarchy
             dataset: DateCustom
             folder: Date Attributes
@@ -186,6 +192,7 @@ hierarchies:
             sort_column: pk_date
           - unique_name: Day Week
             label: Day Week
+            description: "Full calendar date at day grain on the Date Week Hierarchy. Role-played as Order or Ship date; contrast Day Attribute (Month hierarchy variant)."
             associated_hierarchy: Date Week Hierarchy
             dataset: DateCustom
             folder: Date Attributes
@@ -195,6 +202,7 @@ hierarchies:
             sort_column: pk_date
           - unique_name: Day Of Week Name Week
             label: Day Of Week Name Week
+            description: "Weekday name on the Date Week Hierarchy. Role-played as Order or Ship date; contrast Day Of Week Name (Month hierarchy variant)."
             associated_hierarchy: Date Week Hierarchy
             dataset: DateCustom
             folder: Date Attributes
@@ -204,6 +212,7 @@ hierarchies:
             sort_column: day_of_week_name
           - unique_name: Day Of Week Number Week
             label: Day Of Week Number Week
+            description: "Weekday number (1-7) on the Date Week Hierarchy. Role-played as Order or Ship date; contrast Day Of Week Number (Month hierarchy variant)."
             associated_hierarchy: Date Week Hierarchy
             dataset: DateCustom
             folder: Date Attributes
@@ -213,6 +222,7 @@ hierarchies:
             sort_column: day_of_week
   - unique_name: Date Week Hierarchy
     label: Date Week Hierarchy
+    description: "A Gregorian weekly calendar: Year > Week > Day. Contrast Date Month Hierarchy (Year/Quarter/Month/Day) and the Retail 445 calendar."
     filter_empty: 'yes'
     folder: Date Attributes
     levels:
@@ -221,6 +231,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Week Of Year
             label: Week Of Year
+            description: "Week number within the year (1-53), standard week calendar. Role-played as Order or Ship date; contrast Reporting Week Of Year (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -239,6 +250,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Reporting Half Year Attribute
             label: Reporting Half Year Attribute
+            description: "Retail 4-4-5 reporting half year label (H1, H2). Role-played as Order or Ship date."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -249,6 +261,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Reporting Quarter Of Year
             label: Reporting Quarter Of Year
+            description: "Reporting quarter number within the Retail 4-4-5 year (1-4). Role-played as Order or Ship date; not the Gregorian Quarter Number."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -257,6 +270,7 @@ hierarchies:
             sort_column: reporting_quarter_of_year_name
           - unique_name: Reporting Quarter Of Half Year
             label: Reporting Quarter Of Half Year
+            description: "Reporting quarter number within the Retail 4-4-5 half year (1-2). Role-played as Order or Ship date."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -267,6 +281,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Reporting Month Name
             label: ReportIng Month Name
+            description: "Retail 4-4-5 reporting month name. Role-played as Order or Ship date; not the Gregorian month name."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -275,6 +290,7 @@ hierarchies:
             sort_column: reporting_month_name2
           - unique_name: Reporting Month Of Quarter
             label: Reporting Month Of Quarter
+            description: "Reporting month number within the Retail 4-4-5 quarter (1-3). Role-played as Order or Ship date."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -283,6 +299,7 @@ hierarchies:
             sort_column: reporting_month_of_quarter_name
           - unique_name: Reporting Month Of Year
             label: Reporting Month Of Year
+            description: "Reporting month number within the Retail 4-4-5 year (1-12). Role-played as Order or Ship date; not the Gregorian Month of Year."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -293,6 +310,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Reporting Week Of Month
             label: Reporting Week Of Month
+            description: "Reporting week number within the Retail 4-4-5 month (1-5). Role-played as Order or Ship date."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -301,6 +319,7 @@ hierarchies:
             sort_column: reporting_week_of_month_name
           - unique_name: Reporting Week Of Year
             label: Reporting Week Of Year
+            description: "Reporting week number within the Retail 4-4-5 year (1-53). Role-played as Order or Ship date; not the standard Week Of Year."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -311,6 +330,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Reporting Day Of Month
             label: Reporting Day Of Month
+            description: "Reporting day number within the Retail 4-4-5 month. Role-played as Order or Ship date."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -319,6 +339,7 @@ hierarchies:
             sort_column: reporting_day_of_month_name
           - unique_name: Reporting Day Of Week
             label: Reporting Day Of Week
+            description: "Reporting day number within the Retail 4-4-5 week (1-7). Role-played as Order or Ship date."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -327,6 +348,7 @@ hierarchies:
             sort_column: reporting_day_of_week_name
           - unique_name: Reporting Day Of Year
             label: Reporting Day Of Year
+            description: "Reporting day number within the Retail 4-4-5 year. Role-played as Order or Ship date."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -354,6 +376,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Custom Quarter Of Year
             label: Custom Quarter Of Year
+            description: "Quarter-of-year label on the Custom PP445 calendar (445 with custom parallel period keys). Role-played as Order or Ship date; contrast Reporting Quarter Of Year (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -367,6 +390,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Custom Month Name
             label: Custom Month Name
+            description: "Month name on the Custom PP445 calendar (custom parallel period keys). Role-played as Order or Ship date; contrast Reporting Month Name (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -375,6 +399,7 @@ hierarchies:
             sort_column: reporting_month_name2
           - unique_name: Custom Month Of Quarter
             label: Custom Month Of Quarter
+            description: "Month-of-quarter label on the Custom PP445 calendar. Role-played as Order or Ship date; contrast Reporting Month Of Quarter (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -383,6 +408,7 @@ hierarchies:
             sort_column: reporting_month_of_quarter_name
           - unique_name: Custom Month Of Year
             label: Custom Month Of Year
+            description: "Month-of-year label on the Custom PP445 calendar. Role-played as Order or Ship date; contrast Reporting Month Of Year (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -397,6 +423,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Custom Week Of Month
             label: Custom Week Of Month
+            description: "Week-of-month label on the Custom PP445 calendar. Role-played as Order or Ship date; contrast Reporting Week Of Month (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -405,6 +432,7 @@ hierarchies:
             sort_column: reporting_week_of_month_name
           - unique_name: Custom Week Of Year
             label: Custom Week Of Year
+            description: "Week-of-year label on the Custom PP445 calendar. Role-played as Order or Ship date; contrast Reporting Week Of Year (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -419,6 +447,7 @@ hierarchies:
         secondary_attributes:
           - unique_name: Custom Day Of Month
             label: Custom Day Of Month
+            description: "Day-of-month label on the Custom PP445 calendar. Role-played as Order or Ship date; contrast Reporting Day Of Month (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -427,6 +456,7 @@ hierarchies:
             sort_column: reporting_day_of_month_name
           - unique_name: Custom Day Of Week
             label: Custom Day Of Week
+            description: "Day-of-week label on the Custom PP445 calendar. Role-played as Order or Ship date; contrast Reporting Day Of Week (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -435,6 +465,7 @@ hierarchies:
             sort_column: reporting_day_of_week_name
           - unique_name: Custom Day Of Year
             label: Custom Day Of Year
+            description: "Day-of-year label on the Custom PP445 calendar. Role-played as Order or Ship date; contrast Reporting Day Of Year (Retail 445)."
             dataset: DateCustom
             folder: Date Attributes
             key_columns:
@@ -514,6 +545,7 @@ level_attributes:
     time_unit: day
   - unique_name: Month
     label: Month
+    description: "Calendar month of the standard Gregorian calendar (e.g. January 2014). Role-played per date role (Order or Ship). Not the Retail 445 Reporting Month."
     dataset: DateCustom
     key_columns:
       - month
@@ -522,6 +554,7 @@ level_attributes:
     time_unit: month
   - unique_name: Quarter
     label: Quarter
+    description: "Calendar quarter of the standard Gregorian calendar (e.g. Q1 2014). Role-played as Order or Ship date. Not the Retail 445 Reporting Quarter."
     dataset: DateCustom
     key_columns:
       - quarter
@@ -540,6 +573,7 @@ level_attributes:
     time_unit: day
   - unique_name: Reporting Half Year
     label: Reporting Half Year
+    description: "Retail 4-4-5 reporting half year (H1, H2). Role-played as Order or Ship date."
     dataset: DateCustom
     key_columns:
       - reporting_half_year
@@ -548,6 +582,7 @@ level_attributes:
     time_unit: halfyear
   - unique_name: Reporting Month
     label: ReportIng Month
+    description: "Retail 4-4-5 reporting month (4 or 5 week month). Role-played as Order or Ship date. Not the Gregorian Month."
     dataset: DateCustom
     key_columns:
       - reporting_month
@@ -556,6 +591,7 @@ level_attributes:
     time_unit: month
   - unique_name: Reporting Quarter
     label: Reporting Quarter
+    description: "Retail 4-4-5 reporting quarter (13 weeks). Role-played as Order or Ship date. Not the Gregorian Quarter."
     dataset: DateCustom
     key_columns:
       - reporting_quarter
@@ -573,6 +609,7 @@ level_attributes:
     time_unit: week
   - unique_name: Reporting Year
     label: Reporting Year
+    description: "Retail 4-4-5 reporting / fiscal year. Role-played as Order or Ship date. Not the standard calendar Year."
     dataset: DateCustom
     key_columns:
       - reporting_year
@@ -581,6 +618,7 @@ level_attributes:
     time_unit: year
   - unique_name: Week
     label: Week
+    description: "Calendar week in the Gregorian Date Week Hierarchy. Role-played as Order or Ship date. Not the Retail 445 Reporting Week."
     dataset: DateCustom
     key_columns:
       - week
@@ -598,6 +636,7 @@ level_attributes:
     time_unit: year
   - unique_name: Year Week Hierarchy
     label: Year
+    description: "Calendar year at the top of the Date Week Hierarchy; same members as Year in the Date Month Hierarchy. Role-played as Order or Ship date."
     dataset: DateCustom
     key_columns:
       - year

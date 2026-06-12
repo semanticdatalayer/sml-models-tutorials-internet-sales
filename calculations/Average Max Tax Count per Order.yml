@@ -1,4 +1,5 @@
 unique_name: Average Max Tax Count per Order
 object_type: metric_calc
 label: Average Max Tax Count per Order
+description: "Tax per unit ordered: ratio of Maximum Tax Amount (recorded tax) divided by Order Quantity. Based on recorded taxamt, not the derived Calculated Tax."
 expression: "([Measures].[Maximum Tax Amount] / [Measures].[Order Quantity])"

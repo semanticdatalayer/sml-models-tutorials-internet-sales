@@ -1,7 +1,7 @@
 unique_name: Customer Count Year to Date
 object_type: metric_calc
 label: Customer Count Year to Date
-description: Sales Amount Year-to-date Order Retail 445
+description: Year-to-date (YTD) average of distinct Customer Count across the periods elapsed in the Order Retail 445 reporting year; an average across periods to date, not a running sum, since distinct counts are not additive. NULL when Customer Count is empty; not Sales Amount YTD.
 expression: "CASE WHEN ISEMPTY([Measures].[Customer Count]) THEN NULL \nELSE \nAvg(PeriodsToDate([Order\
   \ Date Dimension].[Order Retail 445].[Order ReportIng Year], [Order Date Dimension].[Order\
   \ Retail 445].CurrentMember), [Measures].[Customer Count]) \nEND "

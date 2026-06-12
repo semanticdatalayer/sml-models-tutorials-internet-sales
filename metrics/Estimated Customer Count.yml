@@ -1,6 +1,7 @@
 unique_name: Estimated Customer Count
 object_type: metric
 label: Estimated Customer Count
+description: "Approximate distinct customers / unique buyers using estimated count distinct for speed on large data. Contrast Customer Count (exact)."
 calculation_method: estimated count distinct
 format: general number
 dataset: factinternetsales

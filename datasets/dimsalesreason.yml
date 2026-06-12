@@ -1,6 +1,7 @@
 unique_name: dimsalesreason
 object_type: dataset
 label: dimsalesreason
+description: "Sales reason lookup: reason name and reason type."
 connection_id: Connection - Internet Sales
 table: dimsalesreason
 

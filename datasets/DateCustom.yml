@@ -1,6 +1,7 @@
 unique_name: DateCustom
 object_type: dataset
 label: DateCustom
+description: "Date dimension table with Gregorian, ISO 8601, and Retail 4-4-5 reporting calendars, plus last-year parallel period keys."
 connection_id: Connection - Internet Sales
 table: datecustom
 
