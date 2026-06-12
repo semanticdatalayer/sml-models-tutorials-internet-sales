@@ -1,4 +1,5 @@
 unique_name: Average Sales Amount SD Count per Order
 object_type: metric_calc
 label: Average Sales Amount SD Count per Order
+description: "Sales variability per unit ordered: ratio of Sales Amount Standard Deviation divided by Order Quantity. Dispersion ratio, not Average Sales per Order."
 expression: "([Measures].[Sales Amount Standard Deviation] / [Measures].[Order Quantity])"

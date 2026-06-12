@@ -1,6 +1,7 @@
 unique_name: dimorder
 object_type: dataset
 label: dimorder
+description: "Sales order line master: order number, line number, order type, and currency."
 connection_id: Connection - Internet Sales
 table: dimorder
 

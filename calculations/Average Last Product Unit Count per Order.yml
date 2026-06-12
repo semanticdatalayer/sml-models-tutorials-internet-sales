@@ -1,4 +1,5 @@
 unique_name: Average Last Product Unit Count per Order
 object_type: metric_calc
 label: Average Last Product Unit Count per Order
+description: "Ratio of Last Product Unit Price divided by Order Quantity; latest unit price spread per unit ordered. Price-based ratio, not a customer or tax ratio."
 expression: "([Measures].[Last Product Unit Price] / [Measures].[Order Quantity])"

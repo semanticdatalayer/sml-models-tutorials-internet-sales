@@ -2,12 +2,14 @@ unique_name: Weight
 object_type: dimension
 label: Weight
 is_degenerate: true
+description: "Product weight attribute parsed from the fact table product_info field. Degenerate product attribute; contrast Size, Style, and Color dimensions."
 
 hierarchies:
 
   - unique_name: Weight
     label: Weight
     folder: Product Attributes
+    description: "Single-level grouping of sales by product weight."
     filter_empty: "yes"
 
     levels:
@@ -19,6 +21,7 @@ level_attributes:
   - unique_name: Weight
     label: Weight
     dataset: factinternetsales
+    description: "Product weight value parsed from the fact product_info map column. Degenerate attribute; contrast Size, Style, Color."
     name_column: weight
     key_columns:
       - weight

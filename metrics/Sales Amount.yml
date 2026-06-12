@@ -1,6 +1,7 @@
 unique_name: Sales Amount
 object_type: metric
 label: Sales Amount
+description: "Total sales revenue / turnover in dollars; monetary value of internet sales line items. Base additive sales measure; contrast Average Sales Amount and Sales Amount Standard Deviation."
 calculation_method: sum
 format: "$#,##0.00"
 dataset: factinternetsales

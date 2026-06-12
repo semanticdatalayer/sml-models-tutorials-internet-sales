@@ -1,6 +1,7 @@
 unique_name: Last Product Unit Price
 object_type: metric
 label: Last Product Unit Price
+description: "Most recent / latest unit selling price per product; price of a single unit at transaction time, taking the last value across the Product dimension rather than summing. Contrast List Price (suggested retail)."
 calculation_method: maximum
 folder: Product Metrics
 format: "$#,##0.00"

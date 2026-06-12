@@ -9,6 +9,7 @@ hierarchies:
   - unique_name: Style
     label: Style
     folder: Product Attributes
+    description: "Single-level grouping of products by style."
 
     levels:
 

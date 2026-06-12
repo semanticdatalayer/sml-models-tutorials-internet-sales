@@ -2,11 +2,13 @@ unique_name: Order Dimension
 object_type: dimension
 label: Order Dimension
 type: standard
+description: "Sales order detail: transaction currency, sales order number, and order line item grain for internet sales transactions."
 
 hierarchies:
 
   - unique_name: Order Dimension
     label: Order Dimension
+    description: "Order rollup Currency > Order (sales order number) > Order Line Item."
     folder: Orders
 
     levels:
@@ -21,6 +23,7 @@ hierarchies:
 
           - unique_name: Order Type
             label: Order Type
+            description: "Order line classification / category / type from the order master. Alternate grouping of order lines, independent of order number."
             folder: Orders
             dataset: dimorder
             name_column: type
@@ -32,6 +35,7 @@ level_attributes:
 
   - unique_name: Currency
     label: Currency
+    description: "Transaction currency name of the sales order (e.g. US Dollar). Top of the Order Dimension hierarchy."
     dataset: dimorder
     name_column: currency_name
     key_columns:
@@ -39,6 +43,7 @@ level_attributes:
 
   - unique_name: Order
     label: Order
+    description: "Sales order number / order ID (e.g. SO43697). One order groups one or more line items; contrast Order Line Item (line grain)."
     dataset: dimorder
     name_column: salesordernumber
     key_columns:

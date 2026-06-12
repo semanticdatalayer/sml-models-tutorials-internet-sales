@@ -1,6 +1,7 @@
 unique_name: Maximum Order Date
 object_type: metric
 label: Maximum Order Date
+description: "Latest / most recent order date key; when the last order was placed (recency). Contrast Minimum Order Date (earliest / first)."
 calculation_method: maximum
 dataset: factinternetsales
 column: orderdatekey

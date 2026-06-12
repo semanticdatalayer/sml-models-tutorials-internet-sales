@@ -1,6 +1,7 @@
 unique_name: dim_geo_country
 object_type: dataset
 label: dim_geo_country
+description: "Geography lookup at country grain: country name."
 connection_id: Connection - Internet Sales
 table: dim_geo_country
 

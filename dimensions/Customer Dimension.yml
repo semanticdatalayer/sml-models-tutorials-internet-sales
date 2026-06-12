@@ -8,6 +8,7 @@ hierarchies:
 
   - unique_name: Customer Hierarchy
     label: Customer Hierarchy
+    description: "Customer rollup with the individual customer (full name) at the leaf; carries first name, last name, and occupation attributes."
     folder: Customer Attributes
 
     levels:
@@ -18,6 +19,7 @@ hierarchies:
 
           - unique_name: d_firstname
             label: First Name
+            description: "Customer first name / given name. Customer attribute; contrast Last Name."
             dataset: dimcustomer
             name_column: firstname
             key_columns:
@@ -25,6 +27,7 @@ hierarchies:
 
           - unique_name: d_lastname
             label: Last Name
+            description: "Customer last name / family name / surname. Customer attribute; contrast First Name."
             dataset: dimcustomer
             name_column: lastname
             key_columns:
@@ -32,6 +35,7 @@ hierarchies:
 
           - unique_name: Occupation
             label: Occupation
+            description: "Customer occupation / profession / job category (e.g. Professional, Skilled Manual, Management)."
             folder: Customer Attributes
             dataset: dimcustomer
             name_column: occupation

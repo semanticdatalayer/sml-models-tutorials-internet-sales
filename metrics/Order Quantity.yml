@@ -1,6 +1,7 @@
 unique_name: Order Quantity
 object_type: metric
 label: Order Quantity
+description: "Total units / quantity sold; number of product units ordered across internet sales lines. Unit volume, not dollar revenue (see Sales Amount)."
 calculation_method: sum
 format: general number
 dataset: factinternetsales

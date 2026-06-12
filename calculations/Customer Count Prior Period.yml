@@ -1,7 +1,7 @@
 unique_name: Customer Count Prior Period
 object_type: metric_calc
 label: 'Customer Count Prior Period '
-description: Order Reporting Hierarchy Previous Period Sales
+description: Prior period's distinct Customer Count (previous / last period) on the Order Retail 445 calendar; NULL when Customer Count is empty. Not next period, not prior year, not Sales Amount.
 expression: "CASE WHEN ISEMPTY([Measures].[Customer Count]) \nTHEN NULL\nELSE\n([Order\
   \ Date Dimension].[Order Retail 445].CurrentMember.PrevMember, [Measures].[Customer Count])\n\
   END\n"
