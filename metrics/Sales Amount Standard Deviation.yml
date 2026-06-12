@@ -1,6 +1,7 @@
 unique_name: Sales Amount Standard Deviation
 object_type: metric
 label: Sales Amount Standard Deviation
+description: "Variability / spread / volatility of line item sales amounts (sample standard deviation). Dispersion measure, not total or average sales."
 calculation_method: stddev_samp
 format: "$#,##0.00"
 dataset: factinternetsales

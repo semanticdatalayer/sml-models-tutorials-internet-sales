@@ -32,6 +32,7 @@ hierarchies:
 
           - unique_name: List Price
             label: List Price
+            description: "Suggested retail price / MSRP of the product in dollars from the product master. Catalog price, not the actual transaction price (see Last Product Unit Price)."
             calculation_method: sum
             folder: Product Metrics
             dataset: dimproduct

@@ -1,6 +1,7 @@
 unique_name: Calculated Tax
 object_type: metric
 label: Calculated Tax
+description: "Estimated sales tax in dollars, derived as 8.5% (0.085) of sales amount per line item. Computed estimate; contrast Maximum Tax Amount which uses the recorded tax amount (taxamt)."
 calculation_method: sum
 format: "$#,##0.00"
 dataset: factinternetsales

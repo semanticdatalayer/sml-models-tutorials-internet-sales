@@ -1,6 +1,7 @@
 unique_name: Maximum Tax Amount
 object_type: metric
 label: Maximum Tax Amount
+description: "Highest / largest recorded tax amount (taxamt) in dollars on a single sales line item. Recorded tax, not the derived 8.5% Calculated Tax."
 calculation_method: maximum
 format: "$#,##0.00"
 dataset: factinternetsales

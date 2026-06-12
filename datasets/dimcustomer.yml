@@ -1,6 +1,7 @@
 unique_name: dimcustomer
 object_type: dataset
 label: dimcustomer
+description: "Customer master: full name, first/last name, gender, occupation, geography key, and date of first purchase."
 connection_id: Connection - Internet Sales
 table: dimcustomer
 

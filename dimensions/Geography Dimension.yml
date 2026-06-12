@@ -1,12 +1,14 @@
 unique_name: Geography Dimension
 object_type: dimension
 label: Geography Dimension
+description: "Customer geography / location: country, state, city, and zip / postal code rollups of where customers live. Customer geography, not order ship-to."
 type: standard
 
 hierarchies:
 
   - unique_name: Geography City
     label: Geography City
+    description: "Customer location rollup Country > State > City. Contrast Geography Zip (Country > Zip Code)."
     folder: Customer Attributes
 
     levels:
@@ -21,6 +23,7 @@ hierarchies:
 
           - unique_name: City Attribute
             label: City
+            description: "City name only / town (e.g. Seattle) without state qualifier. Descriptive attribute on the City level; contrast the City level key (city plus state)."
             dataset: dim_geo_city
             name_column: city
             key_columns:
@@ -31,6 +34,7 @@ hierarchies:
 
   - unique_name: Geography Zip
     label: Geography Zip
+    description: "Customer location rollup Country > Zip Code / postal code. Contrast Geography City (Country > State > City)."
     folder: Customer Attributes
 
     levels:
@@ -43,6 +47,7 @@ hierarchies:
 
           - unique_name: Postal Code
             label: Postal Code
+            description: "Postal code / zip only (e.g. 98101) without country qualifier. Descriptive attribute on the Zip Code level."
             dataset: dim_geo_postalcode
             name_column: postalcode
             key_columns:
@@ -55,6 +60,7 @@ level_attributes:
 
   - unique_name: City
     label: City
+    description: "City with its state for customer geography (e.g. Seattle, WA). Leaf of Geography City hierarchy; contrast the City secondary attribute (city name only)."
     dataset: dim_geo_city
     name_column: citystatekey
     key_columns:
@@ -63,6 +69,7 @@ level_attributes:
 
   - unique_name: Country
     label: Country
+    description: "Customer country / nation (e.g. United States, Australia). Top of the Geography City hierarchy."
     is_unique_key: true
     dataset: dim_geo_country
     name_column: country
@@ -71,6 +78,7 @@ level_attributes:
 
   - unique_name: Country Zip Hiearchy
     label: Country
+    description: "Customer country / nation; top of the Geography Zip hierarchy. Same members as Country in the Geography City hierarchy."
     dataset: dim_geo_country
     name_column: country
     key_columns:
@@ -78,6 +86,7 @@ level_attributes:
 
   - unique_name: City Key
     label: GeoKey
+    description: "Hidden geography surrogate key at city grain; join target for the customer-to-city relationship. Not for reporting."
     is_hidden: true
     is_unique_key: true
     dataset: dim_geo_city
@@ -87,6 +96,7 @@ level_attributes:
 
   - unique_name: Zip Key
     label: GeoKey
+    description: "Hidden geography surrogate key at postal code grain; join target for the customer-to-zip relationship. Not for reporting."
     is_hidden: true
     is_unique_key: true
     dataset: dim_geo_postalcode
@@ -96,6 +106,7 @@ level_attributes:
 
   - unique_name: State
     label: State
+    description: "State / province / region where the customer lives (e.g. California, Washington). Between Country and City in the Geography City hierarchy."
     is_unique_key: true
     dataset: dim_geo_state
     name_column: state
@@ -104,6 +115,7 @@ level_attributes:
 
   - unique_name: Zip Code
     label: Zip Code
+    description: "Customer zip / postal code qualified by country. Leaf of the Geography Zip hierarchy; contrast the Postal Code secondary attribute (code only)."
     is_unique_key: true
     dataset: dim_geo_postalcode
     name_column: countrypostalcode
